@@ -68,7 +68,15 @@ python fetch_pipeline.py                    # all 100 apps, writes cache/
 python extract_pipeline.py                  # writes results_v1.json
 python check_pipeline.py                    # writes verification_report.json
 python repair_v2.py                         # writes results_v2.json
-python score.py                             # v2 vs hand-researched gold set
+
+# MCP passes — retrieval fix, then three evidence-quality corrections
+python mcp_pass.py --write                  # URL-pattern probe -> results_v3.json
+python mcp_finalize.py                      # withdraw/collapse/flag -> results_v4.json
+python mcp_split.py                         # mcp_docs vs mcp_product -> results_v5.json
+python finalize_data.py                     # data fixes + results.csv/.md
+
+python audit_mcp.py --file results_v5.json  # evidence-quality audit, re-runnable
+python score.py                             # v5 vs hand-researched gold set
 python patterns.py                          # distributions and cross-tabs
 ```
 
@@ -82,12 +90,13 @@ Fetches are cached to `cache/` keyed by URL hash, so re-runs are cheap and the
 same page is never fetched twice.
 
 **The cache is committed, so CHECK is reproducible without a network.**
-`cache/*.json` holds the extracted page text — the exact strings every
-`evidence_snippet` is matched against, and all `check_pipeline.py` reads. Clone
-the repo and re-run verification offline; every citation in the results can be
-confirmed or falsified against these files.
+`cache/*.json` (1,020 files, 4 MB) holds the extracted page text — the exact
+strings every `evidence_snippet` is matched against, and all
+`check_pipeline.py` reads. Clone the repo and re-run verification offline;
+every citation in the results can be confirmed or falsified against these
+files.
 
-The raw HTML alongside it (`cache/*_raw.html`, ~480 MB) is **not** committed. It
+The raw HTML alongside it (`cache/*_raw.html`, 482 MB) is **not** committed. It
 is the input to text extraction, not to verification, so excluding it costs
 nothing for checking claims and keeps the repo to a few MB. Re-running
 `fetch_pipeline.py` regenerates it.
@@ -126,7 +135,17 @@ doesn't.
 
 Applying a deterministic rule — if auth or access tier is unknown, buildability
 cannot be asserted — moved 36 apps from a confident verdict to
-`insufficient_evidence`, and dropped `easy_win` from 63 to 53.
+`insufficient_evidence`. A later gate-severity rule — a `contact_sales` or
+`partner_gated` tier cannot be `easy_win` with no blocker — took it further.
+Together they dropped `easy_win` from 63 to 51.
+
+**MCP, after three correction passes.** A URL-pattern probe surfaced 41 apps
+that appeared to ship an MCP server. Auditing the evidence behind that number
+withdrew 4 whose cited pages never mention MCP, and split off 10 more that
+cited a documentation-search server rather than a product API server — a real
+quote, from a real page, about the wrong subject. That leaves **27 with
+product-level evidence, and scope verified for only 11**. The rest are recorded
+as `present` with `scope: unverified` rather than guessed at.
 
 **Gold set, 7 apps.** Researched by hand from the docs before any results were
 looked at, deliberately chosen to hit unusual cases rather than to be
