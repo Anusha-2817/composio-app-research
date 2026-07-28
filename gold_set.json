@@ -4,30 +4,25 @@
     "id": 10,
     "category": "CRM and Sales",
     "status": "ok",
-
     "one_liner": {
       "value": "not_found",
       "evidence_url": null,
       "evidence_snippet": null,
       "confidence": "low"
     },
-
     "instance_model": "per_tenant",
-
     "auth_methods": {
       "value": ["oauth2_client_credentials", "api_key"],
       "evidence_url": "https://api.docs.dealcloud.com/sdk/python/authentication",
       "evidence_snippet": "When it is instantiated, the object is scoped to a given DealCloud environment, by passing the site URL and API credentials as arguments",
       "confidence": "high"
     },
-
     "access_tier": {
       "value": "customer_admin_gated",
       "evidence_url": "https://api.docs.dealcloud.com/docs/apikeys",
       "evidence_snippet": "If you do not see the Admin section, contact your organization's admin or DealCloud Customer Success Manager (CSM) for assistance.",
       "confidence": "high"
     },
-
     "api_surface": {
       "surface_types": ["rest", "graphql", "library", "webhook"],
       "breadth": "broad",
@@ -36,49 +31,41 @@
       "evidence_snippet": "POST {{host}}/api/rest/v1/management/user",
       "confidence": "high"
     },
-
     "mcp": {
       "value": "read_only",
       "evidence_url": "https://api.docs.dealcloud.com/mcp/tools",
       "evidence_snippet": "All DealCloud MCP tools are currently read-only and do not create, update, or delete data.",
       "confidence": "high"
     },
-
     "buildability": "buildable_with_caveats",
     "primary_blocker": "per_tenant_schema",
-
     "notes": "Two auth paths: OAuth2 client_credentials (SDK + token endpoint, scope=publish for Publications) and a user-level API key enabled from Profile. MCP is read-only but REST is full CRUD, so buildability differs by path. Access is gated per-capability, not per-app: Publications requires separate account-manager enablement on top of the API capability. Schema Contracts exist because every site defines its own objects/fields/APINames, so one fixed toolkit cannot be shipped across tenants."
   },
-
   {
     "app": "Sherlock",
     "id": 58,
     "category": "Data, SEO and Scraping",
     "status": "ok",
-
     "one_liner": {
       "value": "Command-line tool that checks whether a username exists across hundreds of social sites",
       "evidence_url": "https://sherlockproject.xyz/usage",
       "evidence_snippet": "Sherlock: Find Usernames Across Social Networks",
       "confidence": "high"
     },
-
     "instance_model": "not_applicable",
-
     "auth_methods": {
       "value": ["not_applicable"],
       "evidence_url": "https://sherlockproject.xyz/usage",
       "evidence_snippet": "usage: sherlock [-h] [--version] [--verbose] [--folderoutput FOLDEROUTPUT]",
-      "confidence": "medium"
+      "confidence": "medium",
+      "negative_finding": true
     },
-
     "access_tier": {
       "value": "open_no_auth",
       "evidence_url": "https://sherlockproject.xyz/installation",
       "evidence_snippet": "python3 -m sherlock_project user123 user789",
       "confidence": "high"
     },
-
     "api_surface": {
       "surface_types": ["cli", "library"],
       "breadth": "narrow",
@@ -87,67 +74,226 @@
       "evidence_snippet": "If you'd rather not install directly to your system, you can import the module at runtime with -m.",
       "confidence": "high"
     },
-
     "mcp": {
       "value": "none",
       "evidence_url": null,
       "evidence_snippet": null,
-      "confidence": "medium"
+      "confidence": "medium",
+      "negative_finding": true
     },
-
     "buildability": "wrong_shape",
     "primary_blocker": "third_party_rate_limits",
-
     "notes": "Not a hosted service. Callable via sandboxed execution, not an API. No auth of its own; the real blocker is being blocked by the third-party sites it queries unauthenticated, which is why --tor and --proxy ship built in with a 60s default timeout. Output is text/CSV/XLSX files rather than structured stdout, so a wrapper must parse files. ToS consideration: this is account enumeration, which is a product decision as much as a technical one."
   },
   {
-  "app": "GitHub",
-  "id": 61,
-  "category": "Developer, Infra and Data platforms",
-  "status": "ok",
-
-  "one_liner": {
-    "value": "not_found",
-    "evidence_url": null,
-    "evidence_snippet": null,
-    "confidence": "low"
+    "app": "GitHub",
+    "id": 61,
+    "category": "Developer, Infra and Data platforms",
+    "status": "ok",
+    "one_liner": {
+      "value": "not_found",
+      "evidence_url": null,
+      "evidence_snippet": null,
+      "confidence": "low"
+    },
+    "instance_model": "global",
+    "auth_methods": {
+      "value": ["token", "oauth2_authcode", "api_key", "basic"],
+      "evidence_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "evidence_snippet": "You can create a personal access token, generate a token with a GitHub App, or use the built-in GITHUB_TOKEN in a GitHub Actions workflow.",
+      "confidence": "high"
+    },
+    "access_tier": {
+      "value": "self_serve_free",
+      "evidence_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "evidence_snippet": "If you want to use the GitHub REST API for personal use, you can create a personal access token.",
+      "confidence": "medium"
+    },
+    "api_surface": {
+      "surface_types": ["rest", "graphql", "webhook"],
+      "breadth": "broad",
+      "write_access": "read_write",
+      "evidence_url": "https://docs.github.com/en/rest/about-the-rest-api/comparing-githubs-rest-api-and-graphql-api",
+      "evidence_snippet": "GitHub provides two APIs: a REST API and a GraphQL API.",
+      "confidence": "high"
+    },
+    "mcp": {
+      "value": "not_found",
+      "evidence_url": null,
+      "evidence_snippet": null,
+      "confidence": "low"
+    },
+    "buildability": "easy_win",
+    "primary_blocker": "none",
+    "notes": "Multiple simultaneous auth paths: PAT (fine-grained or classic), GitHub App installation token, GITHUB_TOKEN in Actions, OAuth app token, and basic auth (client_id:client_secret) for a narrow set of app-management endpoints. Documents an explicit negative: username/password is not supported. SAML SSO orgs require separate token authorization for classic PATs, which is an org-level gate on top of self-serve credentials. NOTE: mcp marked not_found because the two pages read did not mention one; excluded from mcp scoring rather than counted as a miss."
   },
-
-  "instance_model": "global",
-
-  "auth_methods": {
-    "value": ["token", "oauth2_authcode", "api_key", "basic"],
-    "evidence_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
-    "evidence_snippet": "You can create a personal access token, generate a token with a GitHub App, or use the built-in GITHUB_TOKEN in a GitHub Actions workflow.",
-    "confidence": "high"
+  {
+    "app": "Stripe",
+    "id": 81,
+    "category": "Finance and Fintech",
+    "status": "ok",
+    "one_liner": {
+      "value": "not_found",
+      "evidence_url": null,
+      "evidence_snippet": null,
+      "confidence": "low"
+    },
+    "instance_model": "global",
+    "auth_methods": {
+      "value": ["api_key", "oauth2_authcode"],
+      "evidence_url": "https://docs.stripe.com/api/authentication",
+      "evidence_snippet": "The Stripe API uses API keys to authenticate requests.",
+      "confidence": "high"
+    },
+    "access_tier": {
+      "value": "self_serve_free",
+      "evidence_url": "https://docs.stripe.com/keys",
+      "evidence_snippet": "Test mode secret keys start with sk_test_ and have unrestricted access to their sandboxes.",
+      "confidence": "high"
+    },
+    "api_surface": {
+      "surface_types": ["rest", "webhook"],
+      "breadth": "broad",
+      "write_access": "read_write",
+      "evidence_url": "https://docs.stripe.com/api/authentication",
+      "evidence_snippet": "The Stripe API uses API keys to authenticate requests.",
+      "confidence": "high"
+    },
+    "mcp": {
+      "value": "full",
+      "evidence_url": "https://docs.stripe.com/mcp",
+      "evidence_snippet": "Connect using the server URL https://mcp.stripe.com with OAuth authentication",
+      "confidence": "high"
+    },
+    "buildability": "easy_win",
+    "primary_blocker": "none",
+    "notes": "Control app for the gold set: if the agent gets Stripe wrong, something is structurally broken. Restricted API keys are a scoped variant of api_key, not a separate auth method. Test keys work immediately with no card and no approval."
   },
-
-  "access_tier": {
-    "value": "self_serve_free",
-    "evidence_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
-    "evidence_snippet": "If you want to use the GitHub REST API for personal use, you can create a personal access token.",
-    "confidence": "medium"
+  {
+    "app": "Twenty",
+    "id": 5,
+    "category": "CRM and Sales",
+    "status": "ok",
+    "one_liner": {
+      "value": "not_found",
+      "evidence_url": null,
+      "evidence_snippet": null,
+      "confidence": "low"
+    },
+    "instance_model": "self_hosted",
+    "auth_methods": {
+      "value": ["api_key", "oauth2_authcode"],
+      "evidence_url": "https://docs.twenty.com/developers/extend/api",
+      "evidence_snippet": "Authorization: Bearer YOUR_API_KEY",
+      "confidence": "high"
+    },
+    "access_tier": {
+      "value": "self_serve_free",
+      "evidence_url": "https://twenty.com/product",
+      "evidence_snippet": "Sign up for Cloud in under a minute and start your 30-day trial.",
+      "confidence": "medium"
+    },
+    "api_surface": {
+      "surface_types": ["rest", "graphql"],
+      "breadth": "broad",
+      "write_access": "read_write",
+      "evidence_url": "https://docs.twenty.com/developers/extend/api",
+      "evidence_snippet": "Both are available as REST and GraphQL.",
+      "confidence": "high"
+    },
+    "mcp": {
+      "value": "full",
+      "evidence_url": "https://twenty.com/product",
+      "evidence_snippet": "Every Cloud workspace ships with a native MCP server.",
+      "confidence": "high"
+    },
+    "buildability": "buildable_with_caveats",
+    "primary_blocker": "none",
+    "notes": "Only self-hostable app in the 100, and it is BOTH cloud and self-hosted: base URL is api.twenty.com for cloud, {your-domain} for self-hosted. Schema forces one instance_model value, which is a real limitation. MCP is documented as shipping with Cloud workspaces only, so the self-hosted capability is unverified. Metadata API allows programmatic schema changes (objects, fields, relations) — same toolkit-stability problem as DealCloud Schema Contracts, reached by a different mechanism. MCP evidence lives on a marketing page, not in developer docs."
   },
-
-  "api_surface": {
-    "surface_types": ["rest", "graphql", "webhook"],
-    "breadth": "broad",
-    "write_access": "read_write",
-    "evidence_url": "https://docs.github.com/en/rest/about-the-rest-api/comparing-githubs-rest-api-and-graphql-api",
-    "evidence_snippet": "GitHub provides two APIs: a REST API and a GraphQL API.",
-    "confidence": "high"
+  {
+    "app": "WhatsApp Business",
+    "id": 28,
+    "category": "Communications and Messaging",
+    "status": "ok",
+    "one_liner": {
+      "value": "not_found",
+      "evidence_url": null,
+      "evidence_snippet": null,
+      "confidence": "low"
+    },
+    "instance_model": "global",
+    "auth_methods": {
+      "value": ["token", "oauth2_authcode"],
+      "evidence_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+      "evidence_snippet": "not_found",
+      "confidence": "medium"
+    },
+    "access_tier": {
+      "value": "app_review",
+      "evidence_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+      "evidence_snippet": "Before you can use your app in a production capacity, you must create and configure your own webhook endpoint on a public server",
+      "confidence": "high"
+    },
+    "api_surface": {
+      "surface_types": ["rest", "webhook"],
+      "breadth": "moderate",
+      "write_access": "read_write",
+      "evidence_url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+      "evidence_snippet": "not_found",
+      "confidence": "medium"
+    },
+    "mcp": {
+      "value": "not_found",
+      "evidence_url": null,
+      "evidence_snippet": null,
+      "confidence": "low"
+    },
+    "buildability": "needs_outreach",
+    "primary_blocker": "app_review",
+    "notes": "A temporary dashboard token works instantly for testing, but production requires business verification, a registered phone number, message template approval, and a public webhook endpoint. Test credential is not a working credential — that gap is the finding and it is what separates app_review from partner_gated here. Trap noted during hand research: WhatsApp 'authentication templates' are OTP message templates sent to end users, not API authentication."
   },
-
-  "mcp": {
-    "value": "not_found",
-    "evidence_url": null,
-    "evidence_snippet": null,
-    "confidence": "low"
-  },
-
-  "buildability": "easy_win",
-  "primary_blocker": "none",
-
-  "notes": "Multiple simultaneous auth paths: PAT (fine-grained or classic), GitHub App installation token, GITHUB_TOKEN in Actions, OAuth app token, and basic auth (client_id:client_secret) for a narrow set of app-management endpoints. Documents an explicit negative: username/password is not supported. SAML SSO orgs require separate token authorization for classic PATs, which is an org-level gate on top of self-serve credentials — a milder version of DealCloud's admin gating."
-}
+  {
+    "app": "PitchBook",
+    "id": 90,
+    "category": "Finance and Fintech",
+    "status": "ok",
+    "one_liner": {
+      "value": "not_found",
+      "evidence_url": null,
+      "evidence_snippet": null,
+      "confidence": "low"
+    },
+    "instance_model": "not_found",
+    "auth_methods": {
+      "value": ["not_found"],
+      "evidence_url": null,
+      "evidence_snippet": null,
+      "confidence": "low"
+    },
+    "access_tier": {
+      "value": "contact_sales",
+      "evidence_url": "https://pitchbook.com/",
+      "evidence_snippet": "Fill out a form and we'll see if a free trial might be right for you.",
+      "confidence": "high"
+    },
+    "api_surface": {
+      "surface_types": ["none"],
+      "breadth": "not_found",
+      "write_access": "not_found",
+      "evidence_url": null,
+      "evidence_snippet": null,
+      "confidence": "medium",
+      "negative_finding": true
+    },
+    "mcp": {
+      "value": "not_found",
+      "evidence_url": null,
+      "evidence_snippet": null,
+      "confidence": "low"
+    },
+    "buildability": "needs_outreach",
+    "primary_blocker": "no_public_docs",
+    "notes": "No public developer documentation found. Shipped products are end-user tools (Excel plugin, Chrome extension, PowerPoint add-in) that require platform login, not a programmatic API. The research set hint mentions a research API; no public docs for it were located. Per the brief, a gated app documented with evidence is a correct finding, not a failure. Free trial is request-and-review, which fails the self-serve test: someone decides whether you get access."
+  }
 ]

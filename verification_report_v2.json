@@ -1,0 +1,3675 @@
+{
+  "total_apps": 100,
+  "repair_stats": {
+    "repaired": 25,
+    "downgraded": 23,
+    "reclassified_negative": 45,
+    "llm_calls": 39,
+    "latency_s": 64.1
+  },
+  "v1_per_field": {
+    "one_liner": {
+      "verified": 88,
+      "ok_not_found": 10,
+      "FLAG_fabricated_snippet": 1
+    },
+    "instance_model": {
+      "verified": 82,
+      "ok_not_found": 15,
+      "FLAG_fabricated_snippet": 2
+    },
+    "auth_methods": {
+      "verified": 56,
+      "ok_not_found": 29,
+      "FLAG_fabricated_snippet": 12,
+      "FLAG_no_evidence": 1,
+      "unverifiable_negative": 1
+    },
+    "access_tier": {
+      "verified": 79,
+      "ok_not_found": 18,
+      "FLAG_fabricated_snippet": 2
+    },
+    "api_surface": {
+      "verified": 75,
+      "FLAG_no_evidence": 13,
+      "FLAG_fabricated_snippet": 11
+    },
+    "mcp": {
+      "unverifiable_negative": 44,
+      "verified": 38,
+      "ok_not_found": 11,
+      "FLAG_fabricated_snippet": 6
+    }
+  },
+  "v2_per_field": {
+    "one_liner": {
+      "verified": 88,
+      "ok_not_found": 11
+    },
+    "instance_model": {
+      "verified": 83,
+      "ok_not_found": 16
+    },
+    "auth_methods": {
+      "verified": 66,
+      "ok_not_found": 32,
+      "unverifiable_negative": 1
+    },
+    "access_tier": {
+      "verified": 80,
+      "ok_not_found": 19
+    },
+    "api_surface": {
+      "verified": 85,
+      "ok_not_found": 14
+    },
+    "mcp": {
+      "unverifiable_negative": 44,
+      "verified": 41,
+      "ok_not_found": 14
+    }
+  },
+  "per_app": [
+    {
+      "app": "Salesforce",
+      "id": 1,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_no_evidence",
+          "v2": "ok_not_found",
+          "action": "downgraded"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "HubSpot",
+      "id": 2,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Pipedrive",
+      "id": 3,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Attio",
+      "id": 4,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Twenty",
+      "id": 5,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Podio",
+      "id": 6,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Zoho CRM",
+      "id": 7,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_no_evidence",
+          "v2": "ok_not_found",
+          "action": "downgraded"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Close",
+      "id": 8,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Copper",
+      "id": 9,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "DealCloud",
+      "id": 10,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Zendesk",
+      "id": 11,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Intercom",
+      "id": 12,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Freshdesk",
+      "id": 13,
+      "fields": {
+        "one_liner": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_no_evidence",
+          "v2": "ok_not_found",
+          "action": "downgraded"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Front",
+      "id": 14,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Pylon",
+      "id": 15,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "LiveAgent",
+      "id": 16,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Plain",
+      "id": 17,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Help Scout",
+      "id": 18,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Gorgias",
+      "id": 19,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Gladly",
+      "id": 20,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Slack",
+      "id": 21,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Twilio",
+      "id": 22,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "ok_not_found",
+          "action": "downgraded"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Zoho Cliq",
+      "id": 23,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "mcp": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "ok_not_found",
+          "action": "downgraded"
+        }
+      }
+    },
+    {
+      "app": "Lark (Larksuite)",
+      "id": 24,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Pumble",
+      "id": 25,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        }
+      }
+    },
+    {
+      "app": "Discord",
+      "id": 26,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Telegram",
+      "id": 27,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "WhatsApp Business",
+      "id": 28,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Aircall",
+      "id": 29,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Vonage",
+      "id": 30,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Google Ads",
+      "id": 31,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "FLAG_no_evidence",
+          "v2": "ok_not_found",
+          "action": "downgraded"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Meta Ads",
+      "id": 32,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "LinkedIn Ads",
+      "id": 33,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "GoHighLevel",
+      "id": 34,
+      "fields": {
+        "one_liner": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_no_evidence",
+          "v2": "ok_not_found",
+          "action": "downgraded (error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': ')"
+        },
+        "mcp": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Mailchimp",
+      "id": 35,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Klaviyo",
+      "id": 36,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "ok_not_found",
+          "action": "downgraded (error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': ')"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "systeme.io",
+      "id": 37,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Pinterest",
+      "id": 38,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Threads (Meta)",
+      "id": 39,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "SendGrid",
+      "id": 40,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Shopify",
+      "id": 41,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "WooCommerce",
+      "id": 42,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "BigCommerce",
+      "id": 43,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Salesforce Commerce Cloud",
+      "id": 44,
+      "fields": {
+        "one_liner": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_no_evidence",
+          "v2": "ok_not_found",
+          "action": "downgraded (error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': ')"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Magento (Adobe Commerce)",
+      "id": 45,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "ok_not_found",
+          "action": "downgraded (error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': ')"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Squarespace",
+      "id": 46,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Ecwid",
+      "id": 47,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Gumroad",
+      "id": 48,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Amazon Selling Partner",
+      "id": 49,
+      "fields": {
+        "one_liner": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "ok_not_found",
+          "action": "downgraded (error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': ')"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "fanbasis",
+      "id": 50,
+      "fields": {
+        "one_liner": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_no_evidence",
+          "v2": "ok_not_found",
+          "action": "downgraded"
+        },
+        "mcp": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "DataForSEO",
+      "id": 51,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "SE Ranking",
+      "id": 52,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Ahrefs",
+      "id": 53,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "MrScraper",
+      "id": 54,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Apify",
+      "id": 55,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Firecrawl",
+      "id": 56,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Bright Data",
+      "id": 57,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Sherlock",
+      "id": 58,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Waterfall.io",
+      "id": 59,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Clay",
+      "id": 60,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        }
+      }
+    },
+    {
+      "app": "GitHub",
+      "id": 61,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Vercel",
+      "id": 62,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Netlify",
+      "id": 63,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Cloudflare",
+      "id": 64,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Supabase",
+      "id": 65,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Neo4j",
+      "id": 66,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Snowflake",
+      "id": 67,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "MongoDB Atlas",
+      "id": 68,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        }
+      }
+    },
+    {
+      "app": "Datadog",
+      "id": 69,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Sentry",
+      "id": 70,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "ok_not_found",
+          "action": "downgraded"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Notion",
+      "id": 71,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Airtable",
+      "id": 72,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Linear",
+      "id": 73,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Jira",
+      "id": 74,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Asana",
+      "id": 75,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Monday.com",
+      "id": 76,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "ClickUp",
+      "id": 77,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Coda",
+      "id": 78,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Smartsheet",
+      "id": 79,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Harvest",
+      "id": 80,
+      "fields": {
+        "one_liner": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_no_evidence",
+          "v2": "ok_not_found",
+          "action": "downgraded"
+        },
+        "mcp": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Stripe",
+      "id": 81,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Plaid",
+      "id": 82,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "ok_not_found",
+          "action": "downgraded"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Binance",
+      "id": 83,
+      "fields": {
+        "one_liner": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_no_evidence",
+          "v2": "ok_not_found",
+          "action": "downgraded"
+        },
+        "mcp": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Paygent Connect",
+      "id": 84,
+      "fields": {
+        "one_liner": {
+          "v1": "skipped",
+          "v2": "skipped",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "skipped",
+          "v2": "skipped",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "skipped",
+          "v2": "skipped",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "skipped",
+          "v2": "skipped",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "skipped",
+          "v2": "skipped",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "skipped",
+          "v2": "skipped",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "iPayX",
+      "id": 85,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_no_evidence",
+          "v2": "ok_not_found",
+          "action": "downgraded"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "QuickBooks",
+      "id": 86,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Xero",
+      "id": 87,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Brex",
+      "id": 88,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "ok_not_found",
+          "action": "downgraded (error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': ')"
+        },
+        "mcp": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "ok_not_found",
+          "action": "downgraded (error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': ')"
+        }
+      }
+    },
+    {
+      "app": "Ramp",
+      "id": 89,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "ok_not_found",
+          "action": "downgraded (error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': ')"
+        }
+      }
+    },
+    {
+      "app": "PitchBook",
+      "id": 90,
+      "fields": {
+        "one_liner": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_no_evidence",
+          "v2": "ok_not_found",
+          "action": "downgraded (error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': ')"
+        },
+        "mcp": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "NotebookLM",
+      "id": 91,
+      "fields": {
+        "one_liner": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_no_evidence",
+          "v2": "ok_not_found",
+          "action": "downgraded"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "Otter AI",
+      "id": 92,
+      "fields": {
+        "one_liner": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_no_evidence",
+          "v2": "ok_not_found",
+          "action": "downgraded"
+        },
+        "mcp": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Fathom",
+      "id": 93,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Consensus",
+      "id": 94,
+      "fields": {
+        "one_liner": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "FLAG_no_evidence",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "mcp": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Reducto",
+      "id": 95,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Devin",
+      "id": 96,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "FLAG_fabricated_snippet",
+          "v2": "verified",
+          "action": "repaired"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "higgsfield",
+      "id": 97,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Mermaid CLI",
+      "id": 98,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "unverifiable_negative",
+          "v2": "unverifiable_negative",
+          "action": "reclassified"
+        }
+      }
+    },
+    {
+      "app": "YouTube Transcript",
+      "id": 99,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    },
+    {
+      "app": "Grain",
+      "id": 100,
+      "fields": {
+        "one_liner": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "instance_model": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "auth_methods": {
+          "v1": "ok_not_found",
+          "v2": "ok_not_found",
+          "action": "none"
+        },
+        "access_tier": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "api_surface": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        },
+        "mcp": {
+          "v1": "verified",
+          "v2": "verified",
+          "action": "none"
+        }
+      }
+    }
+  ]
+}

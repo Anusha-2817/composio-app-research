@@ -1,0 +1,320 @@
+[
+  {
+    "app": "Attio",
+    "id": 4,
+    "category": "CRM and Sales",
+    "one_liner": {
+      "value": "Attio is the CRM that builds pipeline, advances deals, and grows accounts around the clock.",
+      "evidence_url": "https://attio.com",
+      "evidence_snippet": "Attio is the CRM that builds pipeline, advances deals, and grows accounts around the clock.",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "instance_model": {
+      "value": "per_tenant",
+      "evidence_url": "https://docs.attio.com",
+      "evidence_snippet": "This allows developers to build apps that read and write information to and from Attio workspaces.",
+      "confidence": "medium",
+      "entity_risk": true
+    },
+    "auth_methods": {
+      "value": [
+        "oauth2_authcode"
+      ],
+      "evidence_url": "https://attio.com/platform/developers",
+      "evidence_snippet": "Authenticate and authorize access with OAuth 2.0.",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "access_tier": {
+      "value": "self_serve_paid",
+      "evidence_url": "https://attio.com/pricing",
+      "evidence_snippet": "Designed for every stage of your journey. Start today, no credit card required.",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "api_surface": {
+      "surface_types": [
+        "rest",
+        "webhook",
+        "library"
+      ],
+      "breadth": "broad",
+      "write_access": "read_write",
+      "evidence_url": "https://attio.com/platform/developers",
+      "evidence_snippet": "Create custom integrations with full read and write access.",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "mcp": {
+      "value": "full",
+      "evidence_url": "https://attio.com/platform/developers",
+      "evidence_snippet": "Enable agent-driven workflows with full read and write access.",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "buildability": "easy_win",
+    "primary_blocker": "none",
+    "notes": "Attio provides an App SDK, REST API, and MCP server. The App SDK allows embedding TypeScript React applications within the Attio interface.",
+    "status": "ok",
+    "_meta": {
+      "chars_sent": 22190,
+      "pages_used": 7,
+      "llm_calls": 1,
+      "model": "gemini-3.1-flash-lite",
+      "cost_usd": 0.0,
+      "latency_s": 2.94,
+      "urls_fetched": [
+        "https://attio.com",
+        "https://attio.com/pricing",
+        "https://attio.com/platform/developers",
+        "https://attio.com/apps",
+        "https://attio.com/changelog/2026/more-app-store-updates",
+        "https://attio.com/help/reference/attio-101",
+        "https://docs.attio.com"
+      ],
+      "pages_needing_browser": [
+        "https://attio.com",
+        "https://attio.com/pricing",
+        "https://attio.com/platform/developers",
+        "https://attio.com/apps",
+        "https://attio.com/changelog/2026/more-app-store-updates",
+        "https://attio.com/help/reference/attio-101",
+        "https://docs.attio.com"
+      ]
+    }
+  },
+  {
+    "app": "DealCloud",
+    "id": 10,
+    "category": "CRM and Sales",
+    "one_liner": {
+      "value": "DealCloud is a CRM and sales platform that provides developer documentation for API integration and SDKs.",
+      "evidence_url": "https://api.docs.dealcloud.com",
+      "evidence_snippet": "Dealcloud Developer Documentation",
+      "confidence": "medium",
+      "entity_risk": false
+    },
+    "instance_model": {
+      "value": "per_tenant",
+      "evidence_url": "https://api.docs.dealcloud.com/sdk/python/authentication",
+      "evidence_snippet": "the object is scoped to a given DealCloud environment, by passing the site URL and API credentials as arguments",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "auth_methods": {
+      "value": [
+        "oauth2_client_credentials",
+        "api_key",
+        "oauth2_authcode"
+      ],
+      "evidence_url": "https://api.docs.dealcloud.com/docs/token",
+      "evidence_snippet": "DealCloud uses the OAuth2 Client Credentials flow to generate a bearer token",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "access_tier": {
+      "value": "customer_admin_gated",
+      "evidence_url": "https://api.docs.dealcloud.com/docs/apikeys",
+      "evidence_snippet": "To enable API access, ensure the intended user is assigned to a user group with the appropriate permissions. Navigate to Admin > User Management, select the relevant user group, go to Capabilities > Site Areas, and enable \"API\".",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "api_surface": {
+      "surface_types": [
+        "rest",
+        "library"
+      ],
+      "breadth": "moderate",
+      "write_access": "read_write",
+      "evidence_url": "https://api.docs.dealcloud.com/docs/token",
+      "evidence_snippet": "POST {baseUrl}/api/rest/v1/oauth/token",
+      "confidence": "medium",
+      "entity_risk": false
+    },
+    "mcp": {
+      "value": "read_only",
+      "evidence_url": "https://api.docs.dealcloud.com/mcp/authentication",
+      "evidence_snippet": "The MCP layer applies the DealCloud user permission model. A user can access only the data they are permissioned for, the same as through the web portal or the API.",
+      "confidence": "medium",
+      "entity_risk": false
+    },
+    "buildability": "buildable_with_caveats",
+    "primary_blocker": "admin_enablement",
+    "notes": "The API requires specific user group permissions to be enabled by an admin. The instance model is per-tenant as evidenced by the requirement to provide a site URL (e.g., client.dealcloud.com) for SDK instantiation.",
+    "status": "ok",
+    "_meta": {
+      "chars_sent": 8047,
+      "pages_used": 6,
+      "llm_calls": 1,
+      "model": "gemini-3.1-flash-lite",
+      "cost_usd": 0.0,
+      "latency_s": 3.32,
+      "urls_fetched": [
+        "https://api.docs.dealcloud.com",
+        "https://api.docs.dealcloud.com/docs/token",
+        "https://api.docs.dealcloud.com/mcp/authentication",
+        "https://api.docs.dealcloud.com/sdk/python/authentication",
+        "https://api.docs.dealcloud.com/sdk/csharp/authentication",
+        "https://api.docs.dealcloud.com/docs/apikeys"
+      ],
+      "pages_needing_browser": [
+        "https://api.docs.dealcloud.com"
+      ]
+    }
+  },
+  {
+    "app": "Sherlock",
+    "id": 58,
+    "category": "Data, SEO and Scraping",
+    "one_liner": {
+      "value": "Hunt down social media accounts by username across 400+ social networks",
+      "evidence_url": "https://github.com/sherlock-project/sherlock",
+      "evidence_snippet": "Hunt down social media accounts by username across 400+ social networks",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "instance_model": {
+      "value": "not_applicable",
+      "evidence_url": "https://github.com/sherlock-project/sherlock",
+      "evidence_snippet": "usage: sherlock [-h]",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "auth_methods": {
+      "value": [
+        "none"
+      ],
+      "evidence_url": "https://github.com/sherlock-project/sherlock",
+      "evidence_snippet": "usage: sherlock [-h]",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "access_tier": {
+      "value": "open_no_auth",
+      "evidence_url": "https://github.com/sherlock-project/sherlock",
+      "evidence_snippet": "MIT © Sherlock Project",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "api_surface": {
+      "surface_types": [
+        "cli"
+      ],
+      "breadth": "not_found",
+      "write_access": "read_only",
+      "evidence_url": "https://github.com/sherlock-project/sherlock",
+      "evidence_snippet": "usage: sherlock [-h]",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "mcp": {
+      "value": "none",
+      "evidence_url": "",
+      "evidence_snippet": "",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "buildability": "wrong_shape",
+    "primary_blocker": "not_a_service",
+    "notes": "Sherlock is an open-source command-line tool designed to run locally, not a hosted SaaS API service.",
+    "status": "ok",
+    "_meta": {
+      "chars_sent": 12046,
+      "pages_used": 3,
+      "llm_calls": 1,
+      "model": "gemini-3.5-flash",
+      "cost_usd": 0.0,
+      "latency_s": 8.87,
+      "urls_fetched": [
+        "https://github.com/sherlock-project/sherlock",
+        "https://docs.github.com",
+        "https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax"
+      ],
+      "pages_needing_browser": [
+        "https://docs.github.com"
+      ]
+    }
+  },
+  {
+    "app": "GitHub",
+    "id": 61,
+    "category": "Developer, Infra and Data platforms",
+    "one_liner": {
+      "value": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API.",
+      "evidence_url": "https://docs.github.com/rest",
+      "evidence_snippet": "Create integrations, retrieve data, and automate your workflows with the GitHub REST API.",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "instance_model": {
+      "value": "global",
+      "evidence_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "evidence_snippet": "curl --request GET \\ --url \"https://api.github.com/octocat\" \\ --header \"Authorization: Bearer YOUR-TOKEN\" \\ --header \"X-GitHub-Api-Version: 2026-03-10\"",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "auth_methods": {
+      "value": [
+        "token",
+        "basic"
+      ],
+      "evidence_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "evidence_snippet": "There a few different ways to get a token: You can create a personal access token, generate a token with a GitHub App, or use the built-in GITHUB_TOKEN in a GitHub Actions workflow.",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "access_tier": {
+      "value": "self_serve_free",
+      "evidence_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "evidence_snippet": "If you want to use the GitHub REST API for personal use, you can create a personal access token.",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "api_surface": {
+      "surface_types": [
+        "rest"
+      ],
+      "breadth": "broad",
+      "write_access": "read_write",
+      "evidence_url": "https://docs.github.com/en/rest/authentication/endpoints-available-for-github-app-installation-access-tokens",
+      "evidence_snippet": "GET /enterprises/{enterprise}/actions/cache/retention-limit PUT /enterprises/{enterprise}/actions/cache/retention-limit",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "mcp": {
+      "value": "none",
+      "evidence_url": "",
+      "evidence_snippet": "",
+      "confidence": "high",
+      "entity_risk": false
+    },
+    "buildability": "easy_win",
+    "primary_blocker": "none",
+    "notes": "GitHub provides a highly comprehensive REST API with global endpoints, supporting personal access tokens, GitHub App tokens, and basic authentication for specific endpoints.",
+    "status": "ok",
+    "_meta": {
+      "chars_sent": 24128,
+      "pages_used": 5,
+      "llm_calls": 1,
+      "model": "gemini-3.5-flash",
+      "cost_usd": 0.0,
+      "latency_s": 27.61,
+      "urls_fetched": [
+        "https://docs.github.com/rest",
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+        "https://docs.github.com/en/rest/authentication/keeping-your-api-credentials-secure",
+        "https://docs.github.com/en/rest/authentication/endpoints-available-for-github-app-installation-access-tokens",
+        "https://docs.github.com/en/rest/authentication/endpoints-available-for-github-app-user-access-tokens",
+        "https://docs.github.com/en/rest/authentication/endpoints-available-for-fine-grained-personal-access-tokens",
+        "https://github.com/pricing"
+      ],
+      "pages_needing_browser": [
+        "https://docs.github.com/rest",
+        "https://docs.github.com/en/rest/authentication/endpoints-available-for-github-app-installation-access-tokens",
+        "https://docs.github.com/en/rest/authentication/endpoints-available-for-github-app-user-access-tokens",
+        "https://docs.github.com/en/rest/authentication/endpoints-available-for-fine-grained-personal-access-tokens"
+      ]
+    }
+  }
+]
