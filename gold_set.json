@@ -1,0 +1,153 @@
+[
+  {
+    "app": "DealCloud",
+    "id": 10,
+    "category": "CRM and Sales",
+    "status": "ok",
+
+    "one_liner": {
+      "value": "not_found",
+      "evidence_url": null,
+      "evidence_snippet": null,
+      "confidence": "low"
+    },
+
+    "instance_model": "per_tenant",
+
+    "auth_methods": {
+      "value": ["oauth2_client_credentials", "api_key"],
+      "evidence_url": "https://api.docs.dealcloud.com/sdk/python/authentication",
+      "evidence_snippet": "When it is instantiated, the object is scoped to a given DealCloud environment, by passing the site URL and API credentials as arguments",
+      "confidence": "high"
+    },
+
+    "access_tier": {
+      "value": "customer_admin_gated",
+      "evidence_url": "https://api.docs.dealcloud.com/docs/apikeys",
+      "evidence_snippet": "If you do not see the Admin section, contact your organization's admin or DealCloud Customer Success Manager (CSM) for assistance.",
+      "confidence": "high"
+    },
+
+    "api_surface": {
+      "surface_types": ["rest", "graphql", "library", "webhook"],
+      "breadth": "broad",
+      "write_access": "read_write",
+      "evidence_url": "https://api.docs.dealcloud.com/docs/management/create_user",
+      "evidence_snippet": "POST {{host}}/api/rest/v1/management/user",
+      "confidence": "high"
+    },
+
+    "mcp": {
+      "value": "read_only",
+      "evidence_url": "https://api.docs.dealcloud.com/mcp/tools",
+      "evidence_snippet": "All DealCloud MCP tools are currently read-only and do not create, update, or delete data.",
+      "confidence": "high"
+    },
+
+    "buildability": "buildable_with_caveats",
+    "primary_blocker": "per_tenant_schema",
+
+    "notes": "Two auth paths: OAuth2 client_credentials (SDK + token endpoint, scope=publish for Publications) and a user-level API key enabled from Profile. MCP is read-only but REST is full CRUD, so buildability differs by path. Access is gated per-capability, not per-app: Publications requires separate account-manager enablement on top of the API capability. Schema Contracts exist because every site defines its own objects/fields/APINames, so one fixed toolkit cannot be shipped across tenants."
+  },
+
+  {
+    "app": "Sherlock",
+    "id": 58,
+    "category": "Data, SEO and Scraping",
+    "status": "ok",
+
+    "one_liner": {
+      "value": "Command-line tool that checks whether a username exists across hundreds of social sites",
+      "evidence_url": "https://sherlockproject.xyz/usage",
+      "evidence_snippet": "Sherlock: Find Usernames Across Social Networks",
+      "confidence": "high"
+    },
+
+    "instance_model": "not_applicable",
+
+    "auth_methods": {
+      "value": ["not_applicable"],
+      "evidence_url": "https://sherlockproject.xyz/usage",
+      "evidence_snippet": "usage: sherlock [-h] [--version] [--verbose] [--folderoutput FOLDEROUTPUT]",
+      "confidence": "medium"
+    },
+
+    "access_tier": {
+      "value": "open_no_auth",
+      "evidence_url": "https://sherlockproject.xyz/installation",
+      "evidence_snippet": "python3 -m sherlock_project user123 user789",
+      "confidence": "high"
+    },
+
+    "api_surface": {
+      "surface_types": ["cli", "library"],
+      "breadth": "narrow",
+      "write_access": "read_only",
+      "evidence_url": "https://sherlockproject.xyz/installation",
+      "evidence_snippet": "If you'd rather not install directly to your system, you can import the module at runtime with -m.",
+      "confidence": "high"
+    },
+
+    "mcp": {
+      "value": "none",
+      "evidence_url": null,
+      "evidence_snippet": null,
+      "confidence": "medium"
+    },
+
+    "buildability": "wrong_shape",
+    "primary_blocker": "third_party_rate_limits",
+
+    "notes": "Not a hosted service. Callable via sandboxed execution, not an API. No auth of its own; the real blocker is being blocked by the third-party sites it queries unauthenticated, which is why --tor and --proxy ship built in with a 60s default timeout. Output is text/CSV/XLSX files rather than structured stdout, so a wrapper must parse files. ToS consideration: this is account enumeration, which is a product decision as much as a technical one."
+  },
+  {
+  "app": "GitHub",
+  "id": 61,
+  "category": "Developer, Infra and Data platforms",
+  "status": "ok",
+
+  "one_liner": {
+    "value": "not_found",
+    "evidence_url": null,
+    "evidence_snippet": null,
+    "confidence": "low"
+  },
+
+  "instance_model": "global",
+
+  "auth_methods": {
+    "value": ["token", "oauth2_authcode", "api_key", "basic"],
+    "evidence_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "evidence_snippet": "You can create a personal access token, generate a token with a GitHub App, or use the built-in GITHUB_TOKEN in a GitHub Actions workflow.",
+    "confidence": "high"
+  },
+
+  "access_tier": {
+    "value": "self_serve_free",
+    "evidence_url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+    "evidence_snippet": "If you want to use the GitHub REST API for personal use, you can create a personal access token.",
+    "confidence": "medium"
+  },
+
+  "api_surface": {
+    "surface_types": ["rest", "graphql", "webhook"],
+    "breadth": "broad",
+    "write_access": "read_write",
+    "evidence_url": "https://docs.github.com/en/rest/about-the-rest-api/comparing-githubs-rest-api-and-graphql-api",
+    "evidence_snippet": "GitHub provides two APIs: a REST API and a GraphQL API.",
+    "confidence": "high"
+  },
+
+  "mcp": {
+    "value": "not_found",
+    "evidence_url": null,
+    "evidence_snippet": null,
+    "confidence": "low"
+  },
+
+  "buildability": "easy_win",
+  "primary_blocker": "none",
+
+  "notes": "Multiple simultaneous auth paths: PAT (fine-grained or classic), GitHub App installation token, GITHUB_TOKEN in Actions, OAuth app token, and basic auth (client_id:client_secret) for a narrow set of app-management endpoints. Documents an explicit negative: username/password is not supported. SAML SSO orgs require separate token authorization for classic PATs, which is an org-level gate on top of self-serve credentials — a milder version of DealCloud's admin gating."
+}
+]
