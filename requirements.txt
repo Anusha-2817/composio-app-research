@@ -1,0 +1,6 @@
+google-genai
+python-dotenv
+playwright
+requests
+lxml
+readability-lxml
