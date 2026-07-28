@@ -27,6 +27,10 @@ This caught **34 fabricated citations** across 594 fields on the first pass.
 | Extract | Fill the schema from fetched text only, with a verbatim quote per field | yes |
 | Check | String-match every quote against its source page | no |
 | Repair (v2) | Re-extract flagged fields; downgrade to `not_found` if they fail twice | yes |
+| MCP probe (v3) | Probe deterministic `<domain>/mcp` URL patterns for MCP docs that link discovery never reaches | no |
+| MCP finalize (v4) | Withdraw citations whose page never mentions MCP; collapse scope to `present` where the quote states no capability; flag entity risk | no |
+| MCP split (v5) | Separate `mcp_docs` from `mcp_product` so a documentation-search server is not read as a product API server | no |
+| Data fixes | Withdraw malformed URLs, apply the gate-severity rule, drop `none` from populated auth lists; emit CSV/MD | no |
 
 Full design notes and the schema live in [`SPEC.md`](SPEC.md), including a
 "design decisions" section recording which observed failure drove each change.
@@ -53,6 +57,11 @@ flowchart TD
     N -->|no| O[downgrade to not_found]
     K --> P[results_v2.json]
     O --> P
+    P --> Q[MCP PROBE<br/>URL patterns, no LLM]
+    Q --> R[MCP FINALIZE<br/>withdraw / collapse / flag]
+    R --> S[MCP SPLIT<br/>docs vs product server]
+    S --> T[DATA FIXES<br/>URLs, gate rule, exports]
+    T --> U[results_v5.json<br/>+ results.csv / results.md]
 ```
 
 ## Running it
@@ -110,7 +119,17 @@ nothing for checking claims and keeps the repo to a few MB. Re-running
 | `gold_set.json` | 7 apps researched by hand, no AI — the scoring baseline |
 | `results_v1.json` | First pass, kept untouched for comparison |
 | `results_v2.json` | After the repair loop |
+| `results_v3.json` | After the MCP URL-pattern probe |
+| `results_v4.json` | After withdrawing bad MCP citations and collapsing unevidenced scope |
+| `results_v5.json` | **Current.** After splitting `mcp_docs` from `mcp_product` and the data fixes |
+| `results.csv` / `results.md` | Flat exports of v5, one row per app |
 | `verification_report*.json` | Per-field verdicts for v1 and v2 |
+| `cache/` | `*.json` extracted page text, committed so CHECK re-runs offline; `*_raw.html` excluded |
+| `mcp_pass.py` | Probes deterministic `<domain>/mcp` URL patterns → v3 |
+| `mcp_finalize.py` | Withdraws unsupported MCP citations, collapses scope, flags entity risk → v4 |
+| `mcp_split.py` | Splits the `mcp` field into `mcp_docs` and `mcp_product` → v5 |
+| `finalize_data.py` | URL/entity/gate/auth fixes, emits `results.csv` and `results.md` |
+| `audit_mcp.py` | Read-only evidence-quality audit; re-runnable against any results file |
 | `index.html` | The findings page (built by `build_index.py`) |
 | `patterns.py` | Distribution and cross-tab stats |
 
@@ -188,6 +207,13 @@ them.** Most of the error surface is fetcher reach, not model capability.
   during hand research.
 - **Negative findings are structurally unverifiable.** No page states that an
   app has no MCP server, so "none" can never be verified by citation.
+- **MCP detection is pattern-based, and a real quote can still be off-target.**
+  Probing `<domain>/mcp` paths misses vendors who publish elsewhere, so 27 is a
+  floor rather than a count. Worse, ten apps cited a documentation-search MCP
+  server as evidence of a product API MCP server — a genuine quote from a
+  genuine page, about the wrong subject. String matching verifies that a
+  citation exists, not that it is about the thing being claimed, so this class
+  of error is invisible to CHECK by construction.
 - **7 gold apps is a thin sample.** Enough to name specific failure modes, not
   enough for tight per-field precision estimates.
 - **Nine repair-loop fields were downgraded due to API rate limits**, not

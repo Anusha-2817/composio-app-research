@@ -183,14 +183,14 @@ footer{padding:20px 0;text-align:center;color:var(--fg3);font-size:12px;border-t
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:16px">
   <div class="card" style="padding:14px">
     <div style="font-size:13px;color:var(--fg2)">v1 easy_win</div>
-    <div style="font-size:20px;font-weight:700">63 <span class="delta-neg">&rarr; 53</span></div>
+    <div style="font-size:20px;font-weight:700">63 <span class="delta-neg">&rarr; 51</span></div>
   </div>
   <div class="card" style="padding:14px">
     <div style="font-size:13px;color:var(--fg2)">Moved to insufficient_evidence</div>
     <div style="font-size:20px;font-weight:700">36</div>
   </div>
 </div>
-<p style="font-size:13px;color:var(--fg2);margin-bottom:16px">A deterministic post-processing rule: if <code style="font-family:var(--mono);font-size:12px;background:var(--bg3);padding:1px 5px;border-radius:3px">auth_methods</code> or <code style="font-family:var(--mono);font-size:12px;background:var(--bg3);padding:1px 5px;border-radius:3px">access_tier</code> is not_found, buildability cannot be asserted. This moved 36 apps from easy_win to insufficient_evidence. This is independent of the citation repair loop &mdash; one fixed fabricated evidence, this one fixed unsupported inference. The LLM was asserting easy_win for apps where it had no evidence for the fields that determine buildability.</p>
+<p style="font-size:13px;color:var(--fg2);margin-bottom:16px">A deterministic post-processing rule: if <code style="font-family:var(--mono);font-size:12px;background:var(--bg3);padding:1px 5px;border-radius:3px">auth_methods</code> or <code style="font-family:var(--mono);font-size:12px;background:var(--bg3);padding:1px 5px;border-radius:3px">access_tier</code> is not_found, buildability cannot be asserted. This moved 36 apps to insufficient_evidence &mdash; 10 of them from easy_win, the other 26 from buildable_with_caveats and needs_outreach &mdash; taking easy_win from 63 to 53. A second rule, added later: a contact_sales or partner_gated access tier cannot be easy_win with no blocker. That moved Shopify and Waterfall.io to buildable_with_caveats, taking easy_win to 51. Both rules are independent of the citation repair loop &mdash; that one fixed fabricated evidence, these fix unsupported inference. The LLM was asserting easy_win for apps where it had no evidence for the fields that determine buildability.</p>
 
 <h3>Gold comparison (7 hand-researched apps)</h3>
 <p style="font-size:13px;color:var(--fg2);margin-bottom:12px">The agent reached only <strong>4 of 15</strong> pages a human visited. Most gold evidence URLs were never fetched, limiting what the agent could find.</p>
