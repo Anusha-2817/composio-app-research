@@ -1,0 +1,8 @@
+{
+  "url": "https://neo4j.com/pricing/",
+  "final_url": "https://neo4j.com/pricing/",
+  "fetched_at": "2026-07-28T04:04:52.972101+00:00",
+  "text": "The free plan places limits on the number of nodes and relationships. It is suitable for small projects, learning, and prototyping. In contrast, AuraDB Professional offers enhanced performance and best-effort support, making it ideal for building high-performance, production-ready applications.",
+  "method": "GET",
+  "http_status": 200
+}

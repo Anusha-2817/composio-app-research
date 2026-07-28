@@ -1,0 +1,8 @@
+{
+  "url": "https://usepylon.com/mcp",
+  "final_url": "https://www.usepylon.com/integrations/mcp",
+  "fetched_at": "2026-07-28T10:17:37.898541+00:00",
+  "text": "Pylon's MCP server works with any MCP-compatible client, including Claude Desktop, Claude Code, ChatGPT, and Cursor. Once connected, these tools can read and update Pylon issues, search accounts, fetch contacts, and surface customer context, all via natural language.",
+  "method": "GET",
+  "http_status": 200
+}

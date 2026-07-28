@@ -1,0 +1,8 @@
+{
+  "url": "https://mailchimp.com/developer/marketing/api/",
+  "final_url": "https://mailchimp.com/developer/marketing/api/",
+  "fetched_at": "2026-07-28T03:42:18.779405+00:00",
+  "text": "Lists/AudiencesActivityGet recent daily, aggregated activity stats for your list. For example, view unsubscribes, signups, total emails sent, opens, clicks, and more, for up to 180 days.",
+  "method": "GET",
+  "http_status": 200
+}

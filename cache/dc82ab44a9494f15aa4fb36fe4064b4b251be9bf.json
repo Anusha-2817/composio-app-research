@@ -1,0 +1,8 @@
+{
+  "url": "https://developer.brex.com",
+  "final_url": "https://developer.brex.com/",
+  "fetched_at": "2026-07-28T04:14:10.943155+00:00",
+  "text": "Brex is the first fully unified spend platform — with global corporate cards, expense management, reimbursements, travel, and bill pay. Brex makes it easy for finance teams to control all of their spend, all in one place. Using the Brex API, you can power your internal tools and create custom workflows.Brex APIs use the REST architecture, are defined using the OpenAPI specification and use standard HTTP response codes and verbs. All APIs accept and return JSON and require HTTPS.Explore our guides and review our API documentation to see how you can integrate with Brex.Accounting API: View and manage accounting dataBudgets API: Manage budgets and budget programsExpenses API: View and manage card expenses data, receipt match and receipt uploadsFields API: View and manage fields and their optionsOnboarding API: Refer your customers and personal contacts to Brex and prefill signup informationPayments API: Manage vendors and send ACH, domestic wires, and checksTeam API: Manage users, locations, departments, and cardsTransactions API: View your transactions, accounts, and statementsTravel API: View trips made in Brex TravelWebhooks API: Send real-time notifications based on eventsCheck out our quickstart guide to get up and running making your first Brex API call in just a few minutes. The rest of the guides and documentation provide more in-depth context.Go to https://status.brex.com to see API and Brex system status.Have feedback, questions, or ideas? Join our Slack community to discuss your API integrations with Brex employees and other developers.",
+  "method": "GET",
+  "http_status": 200
+}

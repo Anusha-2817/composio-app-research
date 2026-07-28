@@ -1,0 +1,8 @@
+{
+  "url": "https://ipayx.ai/model-context-protocol",
+  "final_url": "https://www.ipayx.ai/model-context-protocol",
+  "fetched_at": "2026-07-28T10:43:45.051947+00:00",
+  "text": "iPayX Protocol — Neutral FX Verification Layer\n        iPayX Protocol is the neutral FX verification layer for fintech sales teams and FX brokers. We audit foreign-exchange transactions, compare the rate a bank or card network applied against the real-time mid-market rate, reveal invisible spreads, quantify FX costs, and project annual savings.\n        How It Works\n        \n          Enter your transaction – Amount, currencies (e.g. CAD → USD), and the rate your bank applied.\n          We capture the mid-market rate – From regulated interbank data sources at the exact transaction time.\n          Instant audit report – Spread %, FX cost in your base currency, execution grade (A/B/C), and annual savings projection.\n        \n        Trust & Compliance\n        MSB FINTRAC C10001283 | 0-custody | AES-256 | Built in Canada 🇨🇦\n        Links\n        \n        Contact: info@ipayx.ai",
+  "method": "GET",
+  "http_status": 200
+}

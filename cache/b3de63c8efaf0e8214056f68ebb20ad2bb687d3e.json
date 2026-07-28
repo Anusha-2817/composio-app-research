@@ -1,0 +1,8 @@
+{
+  "url": "https://v3.app.mrscraper.com/auth/login",
+  "final_url": "https://app.mrscraper.com/auth/login",
+  "fetched_at": "2026-07-28T04:01:05.745439+00:00",
+  "text": "Sign in\nEmail\nPassword\nForgot password?\nSign in\nWaiting for CAPTCHA verification...\nSign in with Google\nDon't have account?\nSign up\nv3.2.14",
+  "method": "browser",
+  "http_status": 200
+}

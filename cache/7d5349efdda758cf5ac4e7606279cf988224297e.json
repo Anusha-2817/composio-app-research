@@ -1,0 +1,8 @@
+{
+  "url": "https://www.napkin.io/",
+  "final_url": "https://www.napkin.io/",
+  "fetched_at": "2026-07-28T03:53:33.189857+00:00",
+  "text": "\"Each function has environment variables, so you can chuck API keys in there for proxying, auth if you need it, logs for debugging, plus you can write in Node or Python. It’s a healthy amount of features, with more on the way, but it really does feel like embracing simplicity rather than complexity.\"Chris Coyier, Cofounder of Codepen.io",
+  "method": "GET",
+  "http_status": 200
+}

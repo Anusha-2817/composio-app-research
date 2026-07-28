@@ -1,0 +1,8 @@
+{
+  "url": "https://gumroad.com/settings/advanced#application-form",
+  "final_url": "https://gumroad.com/login?next=%2Fsettings%2Fadvanced#application-form",
+  "fetched_at": "2026-07-28T03:59:22.359245+00:00",
+  "text": "Gumroad\nSign up\nLog in\nGoogle\nX\nStripe\nor\nEmail\nPassword\nForgot your password?\nLogin\nLog in with a passkey",
+  "method": "browser",
+  "http_status": 200
+}

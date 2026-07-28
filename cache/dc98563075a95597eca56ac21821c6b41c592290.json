@@ -1,0 +1,8 @@
+{
+  "url": "https://shopify.dev/docs/api/shopify-cli/app",
+  "final_url": "https://shopify.dev/docs/api/shopify-cli/app",
+  "fetched_at": "2026-07-28T03:56:21.295818+00:00",
+  "text": "app import-custom-data-definitionsImport metafield and metaobject definitions from your development store.",
+  "method": "GET",
+  "http_status": 200
+}

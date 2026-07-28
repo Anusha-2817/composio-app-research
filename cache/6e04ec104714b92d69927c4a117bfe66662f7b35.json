@@ -1,0 +1,8 @@
+{
+  "url": "https://developer.atlassian.com/account/login?returnTo=",
+  "final_url": "https://id.atlassian.com/login?continue=https%3A%2F%2Fdeveloper.atlassian.com",
+  "fetched_at": "2026-07-28T04:08:54.464722+00:00",
+  "text": "Log in to continue\nEmail*\nRemember me\nContinue\nPasskey\nGoogle\nMicrosoft\nApple\nSlack\nCan't log in?\n•\nCreate an account\nOne account﻿\n, (opens new window)\n for Jira, Confluence, Trello and more.\nPrivacy Policy﻿\n•\nUser Notice﻿",
+  "method": "browser",
+  "http_status": 200
+}

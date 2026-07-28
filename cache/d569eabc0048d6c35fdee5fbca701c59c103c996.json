@@ -1,0 +1,8 @@
+{
+  "url": "https://discord.com/developers/social-commerce",
+  "final_url": "https://discord.com/developers/social-commerce",
+  "fetched_at": "2026-07-28T03:36:56.592824+00:00",
+  "text": "Yes. Account Linking is essential for instant item delivery, and that's a core part of what makes the experience seamless. Account Linking is part of Discord's social layer integration via the Social SDK, which partners must implement as part of their Social Commerce activation.The benefits go beyond Social Commerce: By connecting player identities across Discord and in-game, developers are seeing measurable impact, with median impact for linked players being 25% more launch days and 16% increased session lengths*.We recommend discussing your current integration status with our team so we can help determine the right approach for your game.*Source: Statistics based on a causal study focused on outcomes after social layer integration for 15+ games launched since December 2024.",
+  "method": "GET",
+  "http_status": 200
+}

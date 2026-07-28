@@ -1,0 +1,8 @@
+{
+  "url": "https://www.vonage.com/communications-apis/pricing",
+  "final_url": "https://www.vonage.com/communications-apis/pricing/",
+  "fetched_at": "2026-07-28T03:39:15.920114+00:00",
+  "text": "The fixed API pricing model is also sometimes known as a subscription-based model. It’s adopted by some software as a service (SaaS) companies that provide APIs. \r\nUnder this model, API users are charged a flat fee, usually on a monthly or annual basis. That fee doesn’t change, regardless of API usage. However, sometimes, API providers will place restrictions or caps on usage. \r\nWhen these kinds of quotas are part of an API pricing arrangement, once a user has reached the limit of their API use for a month or year, they can’t carry on using it until the next billing period.\r\nFixed API pricing is generally attractive to users who expect to get heavy usage out of APIs. It also has the advantage of giving both users and providers greater clarity on what they’ll spend or be paid.",
+  "method": "GET",
+  "http_status": 200
+}

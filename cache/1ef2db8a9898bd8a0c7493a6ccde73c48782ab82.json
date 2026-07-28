@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming-high-performance-overview",
+  "final_url": "https://docs.snowflake.com/en/user-guide/snowpipe-streaming/snowpipe-streaming-high-performance-overview",
+  "fetched_at": "2026-07-28T04:05:29.111710+00:00",
+  "text": "This section describes the key concepts for Snowpipe Streaming. For an introduction to Snowpipe Streaming and its capabilities, see Snowpipe Streaming.\nChannels and exactly-once deliveryLearn how channels provide ordered ingestion and how offset tokens enable exactly-once delivery, including crash recovery examples for Kafka and log file ingestion.The PIPE objectUnderstand how the PIPE object manages server-side data processing, including in-flight transformations, pre-clustering, and the default pipe for simplified setup.Table support and schemaReview supported table types (including Apache Iceberg v2 and v3), schema evolution, supported Java data types, and insert-only operation constraints.Operations and referenceMonitor ingestion health, understand required access privileges, and reference observability tools.",
+  "method": "GET",
+  "http_status": 200
+}

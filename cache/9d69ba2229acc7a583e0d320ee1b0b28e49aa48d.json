@@ -1,0 +1,8 @@
+{
+  "url": "https://www.twilio.com/en-us/user-authentication-identity/lookup",
+  "final_url": "https://www.twilio.com/en-us/user-authentication-identity/lookup",
+  "fetched_at": "2026-07-28T03:34:55.342174+00:00",
+  "text": "Twilio Lookup API uses mobile-identity signals to verify users and prevent fraud. \r\nIt works in the background to look up a phone number and identify real users from those with suspicious behaviors and characteristics, so you can apply additional friction to only the users who present a risk.\r\nWith one API, you can look up a number of attributes to prevent potential fraud and undelivered messages.",
+  "method": "GET",
+  "http_status": 200
+}

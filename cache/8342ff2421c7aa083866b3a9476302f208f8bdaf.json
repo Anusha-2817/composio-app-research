@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.stripe.com/api/authentication",
+  "final_url": "https://docs.stripe.com/api/authentication",
+  "fetched_at": "2026-07-28T04:12:03.598252+00:00",
+  "text": "The Stripe API uses API keys to authenticate requests. You can view and manage your API keys in the Stripe Dashboard.Test mode secret keys start with sk_test_ and have unrestricted access to their sandboxes. In live mode, you configure a restricted API key (starts with rk_live_) with specific API permissions. Using a restricted API key with only a subset of API permissions limits the damage a bad actor could cause if they obtained the key. In both test mode and live mode, you can create as many restricted API keys as you need for different use cases or components of your application. We also create a live mode secret key (starts with sk_live_) that grants access to all Stripe API resources. To protect your business, use restricted API keys instead.Your API keys carry many privileges. Follow best practices to keep your keys safe. Don’t embed secret or restricted API keys in source code or client-side applications. Instead, use your server platform’s secrets vault to provide keys to your server-side applications. If your platform doesn’t offer a secrets vault, set your keys in environment variables.Make all API requests over HTTPS. Calls made over plain HTTP fail. API requests without authentication also fail.Was this section helpful?YesNo",
+  "method": "GET",
+  "http_status": 200
+}

@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.superhuman.com/resources/guides/getting_started_with_coda_mcp",
+  "final_url": "https://coda.io/resources/guides/getting_started_with_coda_mcp",
+  "fetched_at": "2026-07-28T04:10:30.658205+00:00",
+  "text": "Quick terms AI client — The app where you chat with your AI (e.g., Claude, Cursor, or similar). This is where you share doc links and enter your prompts. The client connects to Superhuman Docs via MCP. Agent — The AI you’re chatting with inside that client. It reads your prompts, decides what to do, and uses MCP to act directly in Superhuman Docs. Superhuman Docs  MCP — Superhuman Docs' MCP server. It's Superhuman Docs' implementation of the open Model Context Protocol standard, which connects your agent to Superhuman Docs and gives it tools to act within your docs.",
+  "method": "GET",
+  "http_status": 200
+}

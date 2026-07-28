@@ -1,0 +1,8 @@
+{
+  "url": "https://cursor.com/en/install-mcp?name=transcript-api&config=eyJ1cmwiOiJodHRwczovL3RyYW5zY3JpcHRhcGkuY29tL21jcCJ9",
+  "final_url": "https://cursor.com/install-mcp?name=transcript-api&config=eyJ1cmwiOiJodHRwczovL3RyYW5zY3JpcHRhcGkuY29tL21jcCJ9",
+  "fetched_at": "2026-07-28T04:18:22.037610+00:00",
+  "text": "Launched CursorMCP server installation should be starting in Cursor.If Cursor didn't open automatically, you can manually add the MCP server with the configuration below:MCP Server Configuration:{\n  \"transcript-api\": {\n    \"url\": \"https://transcriptapi.com/mcp\"\n  }\n}",
+  "method": "browser",
+  "http_status": 200
+}

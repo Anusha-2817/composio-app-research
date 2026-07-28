@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.snowflake.com/en/sql-reference-commands",
+  "final_url": "https://docs.snowflake.com/en/sql-reference-commands",
+  "fetched_at": "2026-07-28T04:05:45.976323+00:00",
+  "text": "SQL command reference\nThese topics provide reference information for all the Snowflake SQL commands (DDL, DML, and query syntax).\n\nQuery syntax — structure of SQL queries in Snowflake.\n\nQuery operators — arithmetic, logical, and other types of operators.\n\nData Definition Language (DDL) commands — overview of DDL commands.\n\nData Manipulation Language (DML) commands — commands for performing DML operations, including:\n\nInserting, deleting, updating, and merging data in Snowflake tables.\nBulk copying data into and out of Snowflake tables.\nStaging files for bulk copying.\n\nAll commands (alphabetical) — alphabetical list of all the commands.\n\nCommands categorized by the type of objects and operations they control, including:\n\nGeneral account-level objects (accounts, users, roles, security policies, integrations, etc.) and operations (failover & recovery, etc.).\nSession-based operations (session context, queries, variables, transactions, etc.).\nVirtual warehouses (for loading data and performing queries) and resource monitors (for controlling credit usage).\nDatabases, schemas, tables, and other schema-level objects (views, sequences, etc.).\nSnowflake extensions and application development (user-defined functions, stored procedures, scripting, etc.).\nObjects for sharing data (shares, listings, etc.).\nObjects for classifying, protecting, and governing data (masking policies, row-access policies, tags, etc.).",
+  "method": "GET",
+  "http_status": 200
+}

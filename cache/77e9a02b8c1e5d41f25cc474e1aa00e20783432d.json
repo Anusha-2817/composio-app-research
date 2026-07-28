@@ -1,0 +1,8 @@
+{
+  "url": "https://www.salesforce.com/in/marketing/pricing/",
+  "final_url": "https://www.salesforce.com/in/marketing/pricing/?bc=OTH",
+  "fetched_at": "2026-07-28T03:25:56.766582+00:00",
+  "text": "Marketing Cloud lets you personalise every customer interaction, automate marketing with AI agents, and unify your marketing, sales, and service experiences — all on the Salesforce platform.\nWith it, you can:\nCreate two-way customer conversations across email, SMS, web, and WhatsApp — replacing outdated “do-not-reply” messages.\nAutomate campaign creation and performance optimisation using AI agents that act like expert teammates.\nDeliver real-time, 1:1 personalisation using Data 360 and Agentforce to tailor offers, content, and recommendations across channels.\nUnify customer data and journeys to create seamless, consistent experiences across your marketing, loyalty, and service programmes.\nOptimise paid media and campaign performance with built-in analytics and AI that monitor results and adjust automatically to protect ROI.\nIntegrate loyalty, personalisation, and analytics tools — all working alongside your existing Marketing Cloud products, with no need to rip and replace.\nWhether you're launching new campaigns, improving personalisation, or optimising performance, Marketing Cloud gives you the tools to do it faster, smarter, and more effectively than ever before.",
+  "method": "GET",
+  "http_status": 200
+}

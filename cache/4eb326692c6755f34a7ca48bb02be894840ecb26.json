@@ -1,0 +1,8 @@
+{
+  "url": "https://plain.com",
+  "final_url": "https://www.plain.com/",
+  "fetched_at": "2026-07-28T03:32:08.116431+00:00",
+  "text": "We give you flexible building blocks, not rigid opinions. Plain is API-first, so everything you see in the product can be done programmatically. Extend workflows, automate the edge cases, or replace entire pieces with your own logic. If you can imagine it, you can ship it.",
+  "method": "GET",
+  "http_status": 200
+}

@@ -1,0 +1,8 @@
+{
+  "url": "https://www.close.com/integrations/zapier",
+  "final_url": "https://close.com/integrations/zapier",
+  "fetched_at": "2026-07-28T03:28:42.521827+00:00",
+  "text": "Zapier is a third-party automation platform that allows you to connect the different tools in your data stack. By using Close and Zapier together, you'll be able to share data in custom ways that may not be available through direct integration. Zapier basically allows you to build out processes that you want to happen repetitively - like, “When something new happens in X, then do Y,\" every time.Why do we use it?We use Zapier at Close to give our customers more flexibility with the tools they can connect to Close and to create unique automations within Close. What’s great about Zapier is that you can create simple or complex automated workflows yourself without any knowledge of coding language and without getting your dev team involved.For more information about using Zapier with Close see our Help Center.",
+  "method": "GET",
+  "http_status": 200
+}

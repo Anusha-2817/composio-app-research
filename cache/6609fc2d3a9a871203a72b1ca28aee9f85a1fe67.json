@@ -1,0 +1,8 @@
+{
+  "url": "https://developers.smartsheet.com/register",
+  "final_url": "https://developers.smartsheet.com/register",
+  "fetched_at": "2026-07-28T04:10:59.862335+00:00",
+  "text": "Developer Tools RegistrationWith Developer Tools, you can register applications that request user authorization to access Smartsheet data. For details, see OAuth Walkthrough.IMPORTANT: If your application interacts with Smartsheet directly and does not require user authorization, you do not need to register for Developer Tools.The email address used to register for Developer Tools must belong to an existing licensed Smartsheet user on a Business plan or higher.By submitting this form, I agree to the Smartsheet Developer Agreement. Our Privacy Notice describes how we process your personal data.",
+  "method": "GET",
+  "http_status": 200
+}

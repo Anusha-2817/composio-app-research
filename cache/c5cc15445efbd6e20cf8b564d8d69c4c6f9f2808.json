@@ -1,0 +1,8 @@
+{
+  "url": "https://developer.vonage.com/tutorials/silent-authentication/introduction",
+  "final_url": "https://developer.vonage.com/en/tutorials/silent-authentication/introduction",
+  "fetched_at": "2026-07-28T03:39:00.490844+00:00",
+  "text": "Introduction\nUnlike traditional verification methods that rely on SMS or voice calls, silent authentication allows you to verify users through their mobile data connection, without requiring any user interaction. This leads to a faster onboarding experience, improving both security and user experience.\nIn this tutorial, you'll learn how to implement silent user verification in a mobile app using the Vonage Verify API, with a backend written in Node.js and a client built in Android (Kotlin). The demo app implements Silent Authentication verification with SMS as a fallback.\nThe tutorial is divided into three main sections:\n\nthe backend, where you'll set up the environment and build a backend,\nthe mobile app section, where you'll build a modern Android application, create a mobile UI, and integrate the Vonage SDKs,\ntesting the whole project.\n\nThe full source code for this tutorial is available on a GitHub repository. You can explore the repository directly to see the complete implementation.",
+  "method": "GET",
+  "http_status": 200
+}

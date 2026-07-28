@@ -1,0 +1,8 @@
+{
+  "url": "https://googledevelopers.blogspot.com",
+  "final_url": "https://developers.googleblog.com/",
+  "fetched_at": "2026-07-28T03:39:41.240393+00:00",
+  "text": "AI\n                                                \n                                                Cloud\n                                                \n                                                Cloud Homepage\n                                                \n                                                AI Homepage\n                                                \n                                                \n                                                Announcements\n                                                \n                                                Solutions\n                                                \n                                            \n                                            \n                                            Expanding Choice in Gemini Enterprise Agent Platform: Introducing Grounding with Parallel Web Search\n                                            Google Cloud has partnered with Parallel Web Systems to natively integrate Parallel's search infrastructure as a web grounding provider on the Gemini Enterprise Agent Platform. This integration enables developers to anchor their AI agents in verifiable, real-time web results, significantly improving factual accuracy for complex enterprise workflows. Additionally, the partnership offers expanded architectural flexibility, allowing users to programmatically extract, permanently cache, and process web data alongside other large language models.",
+  "method": "GET",
+  "http_status": 200
+}

@@ -1,0 +1,8 @@
+{
+  "url": "https://studio.reducto.ai/auth",
+  "final_url": "https://accounts.reducto.ai/login?return_to=https%3A%2F%2Fstudio.reducto.ai%2Fapi%2Fauth%2Flogin%3Freturn_to_path%3D%252F",
+  "fetched_at": "2026-07-28T04:16:58.056104+00:00",
+  "text": "",
+  "method": "browser",
+  "http_status": 200
+}

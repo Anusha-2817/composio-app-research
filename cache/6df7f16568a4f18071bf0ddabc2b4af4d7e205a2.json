@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.ramp.com/developer-api/v1/mcp",
+  "final_url": "https://docs.ramp.com/developer-api/v1/mcp",
+  "fetched_at": "2026-07-28T04:14:58.749656+00:00",
+  "text": "The Model Context Protocol (MCP)↗ lets AI assistants talk to your systems directly—no copy-paste, no context switching. Ramp ships three MCP servers, each scoped to a different audience.\n\nThe three Ramp MCP servers\n\nRamp MCPConnect AI assistants to your Ramp account for analysis and employee workflows.Developer MCPReal-time API docs and implementation guidance while building with Ramp.Ramp Data MCPQuery public Ramp Rate benchmarks and AI Index adoption metrics — one server, both datasets.\n\nWhat you can build with MCP\n\nAI AgentsConnect agents to Ramp via MCP or the CLI — read data, process approvals, make purchases.AI IndexQuery business AI adoption metrics — overall, by sector, by company size.Ramp RatePull vendor and category benchmarks into research, prompts, and product flows.",
+  "method": "browser",
+  "http_status": 200
+}

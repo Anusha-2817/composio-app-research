@@ -1,0 +1,8 @@
+{
+  "url": "https://mailchimp.com/developer/transactional/api/",
+  "final_url": "https://mailchimp.com/developer/transactional/api/",
+  "fetched_at": "2026-07-28T03:42:26.400833+00:00",
+  "text": "TagsList, delete, or get information on your Tags and their sending statistics.",
+  "method": "GET",
+  "http_status": 200
+}

@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.apify.com/actors",
+  "final_url": "https://docs.apify.com/actors",
+  "fetched_at": "2026-07-28T04:01:13.195956+00:00",
+  "text": "ActorsActors are serverless cloud programs that take a structured JSON input, perform a task (web scraping, browser automation, data processing, and more), and optionally produce a structured output. Run them manually in Apify Console, through the API or CLI, or on a schedule, and combine them into larger automations.\n\nActor lifecycle\n\nActor components\nActors consist of these elements:\n\nDockerfile which specifies where the Actor's source code is, how to build it, and run it.\nDocumentation in a form of a README.md file.\nInput and output schemas that describe what input the Actor requires, and what results it produces.\nAccess to an out-of-the-box storage system for Actor data, results, and files.\nMetadata such as the Actor name, description, author, and version.\n\nThe documentation and input/output schemas help people understand what the Actor does, enter required inputs in the user interface or API, and integrate results into other workflows. Actors can call and interact with each other to build more complex systems from simple ones.\n\nPublic and private Actors\nActors can be public or private. Private Actors are yours to use and keep; no one will see them if you don't want them to. Public Actors are available to everyone in Apify Store. You can make them free to use, or you can charge for them.",
+  "method": "GET",
+  "http_status": 200
+}

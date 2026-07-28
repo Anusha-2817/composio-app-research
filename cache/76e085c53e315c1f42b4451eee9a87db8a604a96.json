@@ -1,0 +1,8 @@
+{
+  "url": "https://developers.fathom.ai/",
+  "final_url": "https://developers.fathom.ai/",
+  "fetched_at": "2026-07-28T04:16:30.064310+00:00",
+  "text": "Documentation Index\n\nFetch the complete documentation index at: /llms.txt\n\nUse this file to discover all available pages before exploring further.\n\nSkip to main content\nFathom API home page\nSearch...\nCtrl K\nGuides\nAPI docs\nSDK Docs\nMCP\nInspiration\nGetting started\nIntroduction\nQuickstart\nWebhooks\nBuilding with OAuth\nOn this page\nGetting Started\nBuild an app with Fathom\nNeed inspiration?\nGetting started\nIntroduction\n\nWelcome to Fathom’s API! 🚀\n\nBuilding a public OAuth app (for other Fathom users to install)? Start here instead.\n​\nGetting Started\nQuickstart Guide\nGenerate an API key and make your first call in minutes.\nAPI docs\nSee all available endpoints and methods.\nWebhooks\nSet up a webhook for your meetings.\nSDKs\nUse our Typescript or Python SDK.\n​\nBuild an app with Fathom\nOAuth\nBuild a Fathom integration that other users can install.\n​\nNeed inspiration?\nExamples\nSee what others have built with Fathom’s API.\nQuickstart\nPowered by\nThis documentation is built and hosted on Mintlify, a developer documentation platform",
+  "method": "browser",
+  "http_status": 200
+}

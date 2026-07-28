@@ -1,0 +1,8 @@
+{
+  "url": "https://developer.atlassian.com/platform/forge/cli-reference/",
+  "final_url": "https://developer.atlassian.com/platform/forge/cli-reference/",
+  "fetched_at": "2026-07-28T04:08:41.495529+00:00",
+  "text": "CLI overviewThe Forge CLI is the command line interface for building and deploying Forge apps.\nFor detailed instructions on setting up your Forge development environment,\nrefer to our getting started guide.\nTo install the CLI, run:\n1\n2npm i -g @forge/cli@latest\n\nTo log in, run:\n\nUpgrading\nTo upgrade the Forge CLI, completely remove the Forge CLI and install it again.\n1\n2npm uninstall -g @forge/cli\nnpm i -g @forge/cli@latest\n\nSupported versions\nEach CLI version will only be supported 6 months after release. After this period, the CLI version will be no longer be supported. We recommend regularly updating to the latest CLI version to benefit from new features and improvements.",
+  "method": "GET",
+  "http_status": 200
+}

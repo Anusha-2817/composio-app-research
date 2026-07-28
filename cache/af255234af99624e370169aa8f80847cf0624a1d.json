@@ -1,0 +1,8 @@
+{
+  "url": "https://developers.notion.com/guides/get-started/handling-api-keys",
+  "final_url": "https://developers.notion.com/guides/get-started/handling-api-keys",
+  "fetched_at": "2026-07-28T04:07:26.540259+00:00",
+  "text": "// In your code\nconst notion = new Client({\n  auth: process.env.NOTION_API_KEY,\n});",
+  "method": "GET",
+  "http_status": 200
+}

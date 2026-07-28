@@ -1,0 +1,8 @@
+{
+  "url": "https://developers.asana.com/reference",
+  "final_url": "https://developers.asana.com/reference/rest-api-reference",
+  "fetched_at": "2026-07-28T04:09:14.980563+00:00",
+  "text": "This is the interface for interacting with the Asana platform. This reference is generated from our OpenAPI Specification, and contains a comprehensive reference for objects, schemas, and endpoints available in the API.\nFor contextual information, guides, and tutorials regarding API usage, visit our guides.\nTo view the API reference for app components, click here.\n📘To begin making requests against the REST API, see the quick start guide.\n\nThe Asana API is a RESTful interface with predictable resource-oriented URLs, accepts JSON or form-encoded requests, returns JSON, and uses standard HTTP features (verbs, response codes, etc.)\nAPI endpoints are relative to the following base URL:\nhttps://app.asana.com/api/1.0\nSome requests return compact representations of objects in order to conserve resources and complete the request more efficiently. See input/output options to customize your responses.\n\nObjects (i.e., resources in the API) are ordered alphabetically in the sidebar of this API reference\nObject schemas can be found by selecting the object in the sidebar (e.g., Attachments)\nSelect an endpoint (e.g., get a task) to see code samples, example requests, and responses\n\nEach API endpoint features a built-in, in-context API explorer through which you can make requests (and see responses). For notes on enumerated values (i.e., on request properties), see this documentation.",
+  "method": "GET",
+  "http_status": 200
+}

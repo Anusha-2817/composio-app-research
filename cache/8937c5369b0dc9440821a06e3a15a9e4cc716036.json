@@ -1,0 +1,8 @@
+{
+  "url": "https://api.docs.dealcloud.com/sdk/csharp/authentication",
+  "final_url": "https://api.docs.dealcloud.com/sdk/csharp/authentication",
+  "fetched_at": "2026-07-28T02:13:00.420275+00:00",
+  "text": "Authentication\nDealCloudSDK's main entrypoint is the Client class. When it is instantiated, the object is scoped to a given DealCloud environment, by passing the site URL and API credentials as arguments:\nusing DealCloudSDK;\n \nvar dc = new Client(\n    \"client.dealcloud.com\",\n    12345,\n    \"secret\"\n);\n\n⚠️Whilst suitable for local development, the above implementation is insecure if you keep code in online repositories such as GitHub. Please see the below examples for more secure implementations.\nSecurely loading credentials using the IConfiguration interface\nThe IConfiguration interface can be used to load configuration values for the DealCloudSDK, where the following parameters are available:\nsiteUrl\nclientId\nclientSecret\nFor example, using a JSON configuration file.\nusing DealCloudSDK;\nusing Microsoft.Extensions.Configuration;\n \n// initialise Ivar configuration object\nconfig = new ConfigurationBuilder()\n    .AddJsonFile(\"environment_config.json\")\n    .Build();\n    \n// initialise Client, using the IConfiguration object as an argument.\nvar dc = new Client(config);",
+  "method": "GET",
+  "http_status": 200
+}

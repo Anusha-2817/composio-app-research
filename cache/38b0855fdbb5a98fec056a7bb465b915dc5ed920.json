@@ -1,0 +1,8 @@
+{
+  "url": "https://api.slack.com",
+  "final_url": "https://docs.slack.dev/",
+  "fetched_at": "2026-07-28T04:51:56.429312+00:00",
+  "text": "Welcome to the Slack API docs, the place where ideas turn into interactive apps, workflows get automated, and Slack becomes the platform that powers your workday.\nGet started​\nCreate your first Slack app quickly.\n\nMacOS/LinuxWindows1Install the Slack CLIDownload the command-line tool for developing Slack apps.curl -fsSL https://downloads.slack-edge.com/slack-cli/install.sh | bash2Connect to your workspaceLog in and authenticate with your Slack workspace.slack login3Create a projectSet up a new Bolt project from a starter template.slack create4Run your appSee your app working in Slack.slack run\n\nExplore sample apps​\nJumpstart your projects with ready-to-use examples.\n\nPick the tool that fits how you work.\n\nNeed help?​\nOur FAQ answers many common questions about using our APIs. If you can't find your answer there, you can reach our dedicated Developer Support team through our handy support system.",
+  "method": "GET",
+  "http_status": 200
+}

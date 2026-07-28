@@ -1,0 +1,8 @@
+{
+  "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/approval-v4",
+  "final_url": "https://open.larksuite.com/document/server-docs/approval-v4/approval-overview",
+  "fetched_at": "2026-07-28T03:36:15.296680+00:00",
+  "text": "ApprovalA single approval flow is composed of forms and approval processes. After you create an approval, employees can fill in widget values when initiating an approval to form an instance。InstanceThe object generated when an employee initiates an approval. It includes more than one taskTaskAn approval task can't exist alone without an approval node. Each approval node may include one or more approval tasks. The approvers of the current approval node are specified in each task. If the current node includes no more than one approver, there are multiple approval tasks, each of which corresponds to a specific approver.CommentComments or comment responses made by employees in approval instances.FileWhen there is a picture or attachment control in the review form, the developer needs to upload the file to the review system through the review upload file interface before creating the review instance.External approvalApproval definition is the description of an approval, including the approval title, icon, description, group, and other basic information.The three parties will create and synchronize three-party approval instancesExternal instanceThe approval flow generated when an employee initiates an approval. Includes information such as multiple approval tasks, approval cc, etcExternal taskEach approval operation of the approver corresponds to an approval task",
+  "method": "browser",
+  "http_status": 200
+}

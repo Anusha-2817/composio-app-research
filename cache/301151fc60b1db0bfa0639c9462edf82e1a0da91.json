@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.snowflake.com/en/sql-reference-data-types",
+  "final_url": "https://docs.snowflake.com/en/sql-reference-data-types",
+  "fetched_at": "2026-07-28T04:05:44.295698+00:00",
+  "text": "Snowflake supports most basic SQL data types (with some restrictions) for use in columns, local variables, expressions, parameters,\nand any other appropriate locations.\n\nIn some cases, data of one type can be converted to another type. For example, INTEGER data can be converted to FLOAT data.\nSome conversions are lossless, but others might lose information. The amount of loss depends upon the data types and the specific\nvalues. For example, converting a FLOAT value to an INTEGER value removes the digits after the decimal place. (The value is\nrounded to the nearest integer.)\nIn some cases, the user must specify the desired conversion, such as when passing a VARCHAR value to the\nTIME_SLICE function, which expects a TIMESTAMP or DATE argument. We\ncall this explicit casting.\nIn other cases, data types are converted automatically, such as when adding a float and an integer. We call this\nimplicit casting (or\ncoercion). In Snowflake, data types are\nautomatically coerced whenever necessary and possible.\nFor more information about explicit and implicit casting, see Data type conversion.\nFor more information about Snowflake data types, see the following topics:",
+  "method": "GET",
+  "http_status": 200
+}

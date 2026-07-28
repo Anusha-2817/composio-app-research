@@ -1,0 +1,8 @@
+{
+  "url": "https://developers.squarespace.com/custom-code/about",
+  "final_url": "https://developers.squarespace.com/custom-code/about",
+  "fetched_at": "2026-07-28T03:58:27.038217+00:00",
+  "text": "The Custom Code Specification is a set of persistent HTML and CSS properties that you can rely on when adding custom code to a Squarespace website.\nSquarespace is constantly evolving and releasing new features for our websites. This can cause the HTML, CSS, and JavaScript powering Squarespace websites to change unexpectedly, which may affect how your custom code works. To maximize the stability of your custom code, use only the properties outlined in this Specification.\nHTML attributes, DOM structure, CSS selectors, CSS variables, and JavaScript variables that are not in the Custom Code Specification are more likely to change in ways that could break custom code.",
+  "method": "GET",
+  "http_status": 200
+}

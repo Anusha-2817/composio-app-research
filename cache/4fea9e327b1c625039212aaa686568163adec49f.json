@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.snowflake.com/en/reference",
+  "final_url": "https://docs.snowflake.com/en/reference",
+  "fetched_at": "2026-07-28T04:05:42.621925+00:00",
+  "text": "DOCUMENTATION\n/\nEN\nGet started\nGuides\nDeveloper\nReference\nRelease notes\nTutorials\nStatus\nOverview\nSQL data types reference\nSQL command reference\nFunction and stored procedure reference\nClass reference\nScripting reference\nGeneral reference\nAPI reference\nReference\nOverview\nReference\n\nReference information on various areas of Snowflake.\n\nSQL data types reference\n\nReference for SQL data types.\n\nSQL command reference\n\nReference for SQL commands.\n\nFunction and stored procedure reference\n\nReference for SQL functions.\n\nSQL class reference\n\nReference for SQL classes.\n\nSnowflake Scripting reference\n\nReference for Snowflake Scripting constructs.\n\nGeneral reference\n\nReference material on other subjects.\n\nWas this page helpful?\n\nYes\nNo\nVisit Snowflake\nJoin the conversation\nDevelop with Snowflake\nShare your feedback\nRead the latest on our blog\nGet your own certification\nPrivacy Notice\nSite Terms\nCookies Settings\n© 2026 Snowflake, Inc. All Rights Reserved.\n\nSNOWFLAKE'S USE OF COOKIES\nWe use cookies to enhance your experience and to analyze site traffic as described in our Cookie Statement. By accepting, you consent to our use of cookies.Cookie Statement.\nCookies Settings\nREJECT ALL\nACCEPT ALL COOKIES",
+  "method": "browser",
+  "http_status": 200
+}

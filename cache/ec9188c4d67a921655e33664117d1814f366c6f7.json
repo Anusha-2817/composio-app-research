@@ -1,0 +1,8 @@
+{
+  "url": "https://developers.klaviyo.com/en/reference/get_events",
+  "final_url": "https://developers.klaviyo.com/en/reference/get_events",
+  "fetched_at": "2026-07-28T03:53:15.448292+00:00",
+  "text": "Default: 200. Min: 1. Max: 1000.",
+  "method": "GET",
+  "http_status": 200
+}

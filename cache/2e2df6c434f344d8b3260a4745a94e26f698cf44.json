@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.mrscraper.com/docs/api/overview",
+  "final_url": "https://docs.mrscraper.com/docs/api/overview",
+  "fetched_at": "2026-07-28T04:00:57.552329+00:00",
+  "text": "API OverviewComprehensive documentation for MrScraper's API endpoints, including authentication, pagination, error handling, and scraper management.\nThe MrScraper API provides a powerful and flexible way to programmatically scrape web pages and retrieve structured data. Built on REST principles, our API offers predictable resource-oriented URLs, accepts JSON-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes.\n\nAll API requests should be made to:\nhttps://api.app.mrscraper.com\n\nJSON FormatAll requests with a payload require Content-Type: application/json header. All responses are returned in JSON format.AuthenticationAll API endpoints require authentication using an API token passed in the x-api-token header. See the Authentication page for details.PaginationList endpoints support pagination to handle large datasets efficiently. See the Pagination page for details.Error HandlingThe API uses standard HTTP status codes and returns detailed error messages. See the Error Handling page for details.",
+  "method": "GET",
+  "http_status": 200
+}

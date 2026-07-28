@@ -1,0 +1,8 @@
+{
+  "url": "https://slack.com/api/mcp",
+  "final_url": "https://slack.com/api/mcp",
+  "fetched_at": "2026-07-28T10:18:51.328781+00:00",
+  "text": "{\"ok\":false,\"error\":\"unknown_method\",\"req_method\":\"mcp\"}",
+  "method": "GET",
+  "http_status": 200
+}

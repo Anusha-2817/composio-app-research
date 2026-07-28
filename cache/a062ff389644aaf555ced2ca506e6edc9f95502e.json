@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.waterfall.io/v1/introduction",
+  "final_url": "https://docs.waterfall.io/v1/introduction",
+  "fetched_at": "2026-07-28T04:02:40.152696+00:00",
+  "text": "Documentation IndexFetch the complete documentation index at: /llms.txtUse this file to discover all available pages before exploring further.Skip to main contentThe Waterfall API is available at https://api.waterfall.io. All requests require an API key in the x-api-key header.\nEndpoints",
+  "method": "GET",
+  "http_status": 200
+}

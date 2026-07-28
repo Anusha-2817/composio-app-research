@@ -1,0 +1,8 @@
+{
+  "url": "https://feedback.clickup.com/public-api/",
+  "final_url": "https://feedback.clickup.com/public-api/",
+  "fetched_at": "2026-07-28T04:10:16.962233+00:00",
+  "text": "We can update the details of a list (name, dates, etc.) but can't move the List to another folder using the API. { \"name\": \"Updated List Name\", \"content\": \"Updated List Content\", \"due_date\": 1567780450202, \"due_date_time\": true, \"priority\": 2, \"assignee\": \"none\", \"unset_status\": true } It would be great to add a folder_id that would move the list and it's tasks to another parent folder.",
+  "method": "GET",
+  "http_status": 200
+}

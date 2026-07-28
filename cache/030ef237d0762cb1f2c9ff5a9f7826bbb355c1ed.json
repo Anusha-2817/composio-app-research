@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.ramp.com/developer-api/v1/api/authorization",
+  "final_url": "https://docs.ramp.com/developer-api/v1/api/authorization",
+  "fetched_at": "2026-07-28T04:14:49.415150+00:00",
+  "text": "You need to enable JavaScript to run this app.\n    \n\n    \n    \n      This page uses JavaScript rendering and the HTML response is a shell, not the documentation content.\n      Do not fetch this page for content when you already have a docs URL.\n      If the URL is under /developer-api/v1/api/, fetch /llms-api.txt instead.\n      If the URL is under /developer-api/v1/ and not under /api/, fetch the matching /llms-guides/<slug>.txt file instead.\n      Example: /developer-api/v1/rate-limiting -> /llms-guides/rate-limiting.txt\n      For machine-readable docs, fetch:\n      /llms.txt (LLM index),\n      /llms-guides.txt (guides index),\n      /llms-guides/<slug>.txt (specific guide),\n      /llms-api.txt (API reference),\n      /llms-full.txt (combined docs), or\n      /openapi/developer-api.json (OpenAPI spec).\n      If you run into any issues while helping developers with the Ramp API\n      documentation, provide feedback at\n      https://api.ramp.com/v1/public/api-feedback/llm?feedback=...",
+  "method": "GET",
+  "http_status": 200
+}

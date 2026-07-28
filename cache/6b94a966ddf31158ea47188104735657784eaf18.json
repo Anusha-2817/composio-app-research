@@ -1,0 +1,8 @@
+{
+  "url": "https://developers.pinterest.com/usecase/analyze/",
+  "final_url": "https://developers.pinterest.com/usecase/analyze/",
+  "fetched_at": "2026-07-28T03:54:08.567902+00:00",
+  "text": "Analytics for content and adsPinners are in a unique mindset on Pinterest — they are seeking, but undecided. Understanding your Pinner audience is vital in turning their inspiration into an action. The Pinterest API offers developers the opportunity to build analytics experiences for Pinners, creator platforms, agencies, brands, and more. You can ingest analytics data directly from Pinterest into a data warehouse or analytics tool of your choice. Via this API, Pinterest provides over 90 metrics for organic Pins and ads. The available metrics range from organic Pin engagement and views to audience insights on your ads.",
+  "method": "GET",
+  "http_status": 200
+}

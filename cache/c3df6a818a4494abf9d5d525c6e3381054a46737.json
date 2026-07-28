@@ -1,0 +1,8 @@
+{
+  "url": "https://api.docs.dealcloud.com/mcp/authentication",
+  "final_url": "https://api.docs.dealcloud.com/mcp/authentication",
+  "fetched_at": "2026-07-28T02:12:56.854453+00:00",
+  "text": "Authentication\nOAuth\nDealCloud MCP uses OAuth to authenticate, letting AI assistants connect on behalf of an individual user. The user signs in through DealCloud to authorize the assistant, and the MCP server then responds in the context of that signed-in user. This keeps access scoped to each user's permissions and attributable for auditing.\nUser Data Access Permissions\nThe MCP layer applies the DealCloud user permission model. A user can access only the data they are permissioned for, the same as through the web portal or the API. If a user lacks access to specific objects, fields, or records, those restrictions apply to their MCP connection as well.",
+  "method": "GET",
+  "http_status": 200
+}

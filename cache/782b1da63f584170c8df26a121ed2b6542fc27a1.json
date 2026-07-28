@@ -1,0 +1,8 @@
+{
+  "url": "https://brightdata.com/pricing/web-unlocker",
+  "final_url": "https://brightdata.com/pricing/web-unlocker",
+  "fetched_at": "2026-07-28T04:02:04.751943+00:00",
+  "text": "Web Unlocker uses Bright Data’s proxy infrastructure and has three major components that other premium proxies lack:\n 1. Request management: Web Unlocker uses retry logic and automated CAPTCHA solving to ensure a near 100% success rate. \n2. Complete user emulation including:\n\n3. Content verification: The data you collect is automatically validated using parameters such as request timing, data types, and response content to ensure you are collecting the highest quality information available.",
+  "method": "GET",
+  "http_status": 200
+}

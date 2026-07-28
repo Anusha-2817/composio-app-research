@@ -1,0 +1,8 @@
+{
+  "url": "https://developer.gladly.com/",
+  "final_url": "https://developer.gladly.com/",
+  "fetched_at": "2026-07-28T03:34:08.459920+00:00",
+  "text": "Integrate seamlessly with Gladly by enabling a connector,\n                    calling Gladly's REST APIs, or implementing the Lookup\n                    API to provide data from your own services.",
+  "method": "GET",
+  "http_status": 200
+}

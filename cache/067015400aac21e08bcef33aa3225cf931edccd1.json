@@ -1,0 +1,8 @@
+{
+  "url": "https://brightdata.com/pricing/serp",
+  "final_url": "https://brightdata.com/pricing/serp",
+  "fetched_at": "2026-07-28T04:02:16.235135+00:00",
+  "text": "Search engines regularly change their structure and algorithms making data scraping difficult. SERP API automatically adjusts to changing SERPs and provides real user’s results with a variety of tailored search parameters. Results will shift depending on your search history, device, and location but with SERP API you will never get blocked because of location. Data is delivered with accuracy and speed in JSON or HTML output.\nBright Data SERP API provides real user’s results in high volumes for all the major search engines. It enables a wide variety of tailored search parameters, and your search results data will be delivered in JSON or HTML output. Focus on extracting the data you need without worrying about getting blocked, and with the most accuracy and speed.",
+  "method": "GET",
+  "http_status": 200
+}

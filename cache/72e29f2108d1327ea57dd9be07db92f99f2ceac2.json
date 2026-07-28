@@ -1,0 +1,8 @@
+{
+  "url": "https://www.salesforce.com/in/agentforce/pricing/",
+  "final_url": "https://www.salesforce.com/in/agentforce/pricing/?bc=OTH",
+  "fetched_at": "2026-07-28T03:25:34.649024+00:00",
+  "text": "In this example, a Salesforce user is engaging with Agentforce to help manage a customer case in Salesforce. Agentforce helps by identifying customers by their email, getting all of the cases for that customer, and helping the Salesforce user add comments to the case.\nActions Used: Identify Customer by Email, Get All Cases for Contact, Add Case Comment\n\nFor this example, the customer has 100 users of Salesforce managing cases and each user manages 3 cases per day, for 20 days a month.",
+  "method": "GET",
+  "http_status": 200
+}

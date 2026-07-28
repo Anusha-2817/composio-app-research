@@ -1,0 +1,8 @@
+{
+  "url": "https://www.usepylon.com/ai-agents/assist",
+  "final_url": "https://www.usepylon.com/ai-agents/assist",
+  "fetched_at": "2026-07-28T03:31:26.964243+00:00",
+  "text": "Assist Agent can search support history, Account Intelligence, CRM data, product usage, internal conversations, Linear, logs, and your codebase. It returns the evidence behind its findings so your team can verify the answer and ask follow-up questions.",
+  "method": "GET",
+  "http_status": 200
+}

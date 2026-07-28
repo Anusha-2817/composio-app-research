@@ -1,0 +1,8 @@
+{
+  "url": "https://brightdata.com/pricing/crawl-api",
+  "final_url": "https://brightdata.com/pricing/crawl-api",
+  "fetched_at": "2026-07-28T04:02:10.517344+00:00",
+  "text": "Crawl API overcomes the limitations of manual web scraping, such as dealing with website structure changes, encountering blocks and captchas, and the high costs associated with infrastructure maintenance. It offers an automated, scalable, and reliable solution for data extraction, significantly reducing operational costs and time.",
+  "method": "GET",
+  "http_status": 200
+}

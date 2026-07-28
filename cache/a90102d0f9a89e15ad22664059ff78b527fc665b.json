@@ -1,0 +1,8 @@
+{
+  "url": "https://airtable.com/developers/agents/mcp/claude",
+  "final_url": "https://airtable.com/developers/agents/mcp/claude",
+  "fetched_at": "2026-07-28T04:08:07.729857+00:00",
+  "text": "Docs\nAgentic tools\nWeb API\nInterface extensions\nScripting\n⌘K\nAgents\nQuickstart\nMCP server\nMCP server overview\nConnecting to Airtable MCP\nClaude\nChatGPT\nCursor\nClaude Code\nCLI\nOther\nControls\nTools reference\nSkills & Plugins\nGetting started\nCore skills\nSolution skills\nClaude\nCopy page\nUsing the official connector\n1\n\nOpen the Airtable connector for Claude.\n\n2\n\nSelect Connect and authorize via OAuth.\n\nOAuth Client ID (only needed for admin allowlisting)\n\nSee more on how to make the most of Airtable with Claude.\n\nOn this page\nUsing the official connector\n←\nMCP server overview\nChatGPT\n→\n© Airtable\nTerms\nPrivacy",
+  "method": "browser",
+  "http_status": 200
+}

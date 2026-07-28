@@ -1,5 +1,8 @@
 .env
-cache/
+# cache/*.json holds the extracted page text that CHECK verifies snippets
+# against — committed so verification is reproducible. The raw HTML is
+# ~480MB and is not needed to re-run CHECK, so it stays out.
+cache/*_raw.html
 __pycache__/
 *.pyc
 .claude/

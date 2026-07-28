@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.firecrawl.dev",
+  "final_url": "https://docs.firecrawl.dev/introduction",
+  "fetched_at": "2026-07-28T04:01:52.515623+00:00",
+  "text": "from firecrawl import Firecrawl\n\napp = Firecrawl(\n  # No API key needed to get started — add one for higher rate limits:\n  # api_key=\"fc-YOUR-API-KEY\",\n)\n\n# 1. Scrape Amazon's homepage\nresult = app.scrape(\"https://www.amazon.com\", formats=[\"markdown\"])\nscrape_id = result.metadata.scrape_id\n\n# 2. Interact — search for a product and get its price\napp.interact(scrape_id, prompt=\"Search for iPhone 16 Pro Max\")\nresponse = app.interact(scrape_id, prompt=\"Click on the first result and tell me the price\")\nprint(response.output)\n\n# 3. Stop the session\napp.stop_interaction(scrape_id)",
+  "method": "GET",
+  "http_status": 200
+}

@@ -1,0 +1,8 @@
+{
+  "url": "https://vercel.com/pricing",
+  "final_url": "https://vercel.com/pricing",
+  "fetched_at": "2026-07-28T04:03:33.757068+00:00",
+  "text": "We provide customers with tools to observe, control, and alert on their infrastructure spend with Spend Management.All new teams have a default on-demand usage budget of $200 (which can be customized) and receive email, web, and SMS notifications as you reach that amount. When reaching 100%, you can optionally configure Vercel to automatically pause all projects with a hard limit.Over the past year, we've added features to the platform based on your feedback to help automatically prevent runaway spend, including recursion protection, improved function defaults, hard spend limits, Attack Challenge Mode, and more.",
+  "method": "GET",
+  "http_status": 200
+}

@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.usepylon.com/pylon-docs/",
+  "final_url": "https://docs.usepylon.com/pylon-docs",
+  "fetched_at": "2026-07-28T03:31:45.482506+00:00",
+  "text": "Pylon is the first agentic support platform built for B2B.Track customer issues across any channel (Slack Connect, Email, Microsoft Teams, Chat Widget, Forms, ...) and orchestrate agents to investigate and act on your customer issues.What is Agentic Support?It's a new way of working, where instead of doing the work yourself - finding the right article in the docs, opening a new tab to write a SQL query to check logs, finding an old slack thread with a workaround - you direct agents to do the work for you.This means support teams become agent builders and orchestrators - building agents and nudging them along on tickets while the agents learn how it is that you solve ever ticket and get better and faster each interaction. It's your judgement and direction, with the tedious work handed off to agents.Assist AgentBackground AgentsSkillsConnectorsSupport AgentOmnichannel SupportCustomer PortalChat WidgetTriggersAccount IntelligenceProduct Intelligence Reporting & AnalyticsBroadcastsAPI",
+  "method": "GET",
+  "http_status": 200
+}

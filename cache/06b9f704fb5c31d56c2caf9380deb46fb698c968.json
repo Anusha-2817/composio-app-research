@@ -1,0 +1,8 @@
+{
+  "url": "https://close.com",
+  "final_url": "https://close.com/",
+  "fetched_at": "2026-07-28T03:28:29.816751+00:00",
+  "text": "What is Close? \nClose is a sales CRM built for teams that sell. It \ncombines calling, email, SMS, pipeline management, \nreporting, and an AI sales agent named Chloe into a \nsingle platform. Close helps teams act on their sales \ndata.\nWhat is Chloe? \nChloe is an AI sales agent built into Close CRM that \ncalls leads, qualifies prospects through real \nconversations, and can book meetings while updating \nyour CRM automatically. She is part of the CRM — not \na separate tool or integration.",
+  "method": "GET",
+  "http_status": 200
+}

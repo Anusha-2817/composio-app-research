@@ -1,0 +1,8 @@
+{
+  "url": "https://developers.monday.com/mcp",
+  "final_url": "https://developer.monday.com",
+  "fetched_at": "2026-07-28T10:41:47.299847+00:00",
+  "text": "04 · Omnichannel\n              Use them anywhere you work\n              Bring an agent in once and reach it from Slack, WhatsApp, Telegram, Make, our MCP, or the API. One identity, every surface — no rebuilding per channel.",
+  "method": "GET",
+  "http_status": 200
+}

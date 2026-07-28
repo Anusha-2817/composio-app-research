@@ -1,0 +1,8 @@
+{
+  "url": "https://firecrawl.dev/mcp",
+  "final_url": "https://docs.firecrawl.dev/mcp-server",
+  "fetched_at": "2026-07-28T10:35:14.684191+00:00",
+  "text": "Documentation IndexFetch the complete documentation index at: /llms.txtUse this file to discover all available pages before exploring further.Skip to main contentFirecrawl MCP gives AI clients access to live web data through the Model Context Protocol. It is available as a hosted service or as an open-source local server.\nStart here\nChoose the connection mode that matches where Firecrawl will run. The hosted routes are credential-free URLs: credentials belong in the OAuth flow or an Authorization header, never in the URL itself.\nConnect an accountUse browser-based OAuth for an interactive MCP client and the full Firecrawl tool surface.Run unattendedUse /v2/mcp with a Firecrawl API key in an Authorization header for CI, servers, and scripts.Try keyless MCPStart without an API key on the rate-limited Search, Scrape, and Parse surface.\nLearn more\nClient setupConfigure Claude, Cursor, VS Code, Windsurf, n8n, and other clients.Run locallyInstall the open-source MCP server and configure a local or self-hosted deployment.Tools and operationsReview Firecrawl MCP tools, rate limits, logging, and error handling.Develop Firecrawl MCPBuild, test, and contribute to the open-source server.",
+  "method": "GET",
+  "http_status": 200
+}

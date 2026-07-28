@@ -7,12 +7,13 @@ Mismatch table: gold vs agent side by side.
 Fields whose gold notes say to exclude them are skipped.
 """
 
+import argparse
 import json
 import re
 from pathlib import Path
 
-V2_PATH = Path(__file__).parent / "results_v2.json"
-GOLD_PATH = Path(__file__).parent / "gold_set.json"
+HERE = Path(__file__).parent
+GOLD_PATH = HERE / "gold_set.json"
 
 SCORED_FIELDS = [
     "one_liner",
@@ -27,11 +28,40 @@ SCORED_FIELDS = [
 
 SURFACE_SUBFIELDS = ["surface_types", "breadth", "write_access"]
 
+# MCP is scored as two independent questions. Conflating them lets a
+# confident "full" hide the fact that we never established the server
+# exists, and lets an honest "we don't know the scope" read as a miss.
+#   existence  does a product MCP server exist at all      yes / no
+#   scope      if so, what can it do                       full / read_only
+# "present" answers existence but abstains on scope. "unverified" and
+# "not_found" abstain on both — they are non-answers, not wrong answers.
+MCP_EXISTS_YES = ("full", "read_only", "present")
+MCP_SCOPES = ("full", "read_only")
+
 
 def get_value(field_obj):
     if isinstance(field_obj, dict):
         return field_obj.get("value")
     return field_obj
+
+
+def get_mcp_value(record):
+    """mcp_product on v5+, plain mcp on older files."""
+    if "mcp_product" in record:
+        return get_value(record.get("mcp_product"))
+    return get_value(record.get("mcp"))
+
+
+def mcp_existence(val):
+    if val in MCP_EXISTS_YES:
+        return "yes"
+    if val == "none":
+        return "no"
+    return None
+
+
+def mcp_scope(val):
+    return val if val in MCP_SCOPES else None
 
 
 def is_not_found(val):
@@ -95,11 +125,17 @@ def compare_api_surface(gold_obj, agent_obj) -> dict[str, bool]:
 
 
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--file", default="results_v5.json",
+                    help="results file to score (default: results_v5.json)")
+    args = ap.parse_args()
+
     with open(GOLD_PATH, encoding="utf-8") as f:
         gold_data = json.load(f)
-    with open(V2_PATH, encoding="utf-8") as f:
+    with open(HERE / args.file, encoding="utf-8") as f:
         v2_data = json.load(f)
 
+    print(f"Scoring {args.file} against {GOLD_PATH.name}\n")
     v2_by_name = {r["app"]: r for r in v2_data}
 
     mismatches = []
@@ -113,6 +149,9 @@ def main():
         elif field == "auth_methods":
             field_stats["auth_methods_exact"] = {"answered": 0, "correct": 0, "total": 0}
             field_stats["auth_methods_overlap"] = {"answered": 0, "total_overlap": 0.0, "total": 0}
+        elif field == "mcp":
+            field_stats["mcp_existence"] = {"answered": 0, "correct": 0, "total": 0}
+            field_stats["mcp_scope"] = {"answered": 0, "correct": 0, "total": 0}
         else:
             field_stats[field] = {"answered": 0, "correct": 0, "total": 0}
 
@@ -161,6 +200,36 @@ def main():
                             "app": app_name, "field": key,
                             "gold": fmt_val(gv), "agent": fmt_val(av),
                         })
+
+            elif field == "mcp":
+                g_raw = get_mcp_value(gold)
+                a_raw = get_mcp_value(agent)
+
+                g_exist, a_exist = mcp_existence(g_raw), mcp_existence(a_raw)
+                if g_exist is not None:
+                    field_stats["mcp_existence"]["total"] += 1
+                    if a_exist is not None:
+                        field_stats["mcp_existence"]["answered"] += 1
+                        if g_exist == a_exist:
+                            field_stats["mcp_existence"]["correct"] += 1
+                        else:
+                            mismatches.append({
+                                "app": app_name, "field": "mcp_existence",
+                                "gold": g_exist, "agent": a_exist,
+                            })
+
+                g_scope, a_scope = mcp_scope(g_raw), mcp_scope(a_raw)
+                if g_scope is not None:
+                    field_stats["mcp_scope"]["total"] += 1
+                    if a_scope is not None:
+                        field_stats["mcp_scope"]["answered"] += 1
+                        if g_scope == a_scope:
+                            field_stats["mcp_scope"]["correct"] += 1
+                        else:
+                            mismatches.append({
+                                "app": app_name, "field": "mcp_scope",
+                                "gold": g_scope, "agent": a_scope,
+                            })
 
             elif field == "auth_methods":
                 if is_not_found(gold_val):

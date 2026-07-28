@@ -1,0 +1,8 @@
+{
+  "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference/business/system_user_access_tokens",
+  "final_url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/reference/business/system_user_access_tokens",
+  "fetched_at": "2026-07-28T03:40:53.307368+00:00",
+  "text": "/{business_id}/system_user_access_tokens\nYou can make a POST request to system_user_access_tokens edge from the following paths:\n\nWhen posting to this edge, no Graph object will be created.\nParameters\nParameter\n\nDescription\nset_token_expires_in_60_daysboolean\nset_token_expires_in_60_days\nReturn Type\nThis endpoint supports read-after-write and will read the node to which you POSTed.\n\nStruct  {\naccess_token: string,\n}Error Codes\nError Code\n\nDescription\nProvided permission is not valid. Check your spelling and syntax.Session key invalid. This could be because the session key has an incorrect format, or because the user has revoked this session",
+  "method": "browser",
+  "http_status": 200
+}

@@ -1,0 +1,8 @@
+{
+  "url": "https://brightdata.com/pricing/scraping-browser",
+  "final_url": "https://brightdata.com/pricing/scraping-browser",
+  "fetched_at": "2026-07-28T04:02:17.630123+00:00",
+  "text": "Scraping Browser works like other automated browsers and is controlled by common high-level APIs like Puppeteer and Playwright, but is the only browser with built-in website unblocking capabilities. Scraping Browser automatically manages all website unlocking operations under the hood, including: CAPTCHA solving, browser fingerprinting, automatic retries, selecting headers, cookies, & Javascript rendering, and more, so you can save time and resources.",
+  "method": "GET",
+  "http_status": 200
+}

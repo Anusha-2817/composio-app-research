@@ -1,0 +1,8 @@
+{
+  "url": "https://shopify.dev/changelog",
+  "final_url": "https://shopify.dev/changelog",
+  "fetched_at": "2026-07-28T03:56:14.905562+00:00",
+  "text": "07.07Prepare your app for migration to Shopify App Pricing New migration tool lets you generate, edit, and test Shopify App Pricing plans from existing Billing API plans, validate usage pricing, and prepare for upcoming subscription migration.",
+  "method": "GET",
+  "http_status": 200
+}

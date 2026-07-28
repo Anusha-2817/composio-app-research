@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.sentry.io/api/#getting-started",
+  "final_url": "https://docs.sentry.io/api/#getting-started",
+  "fetched_at": "2026-07-28T04:07:11.951322+00:00",
+  "text": "The Sentry web API is used to access the Sentry platform programmatically. You can use the APIs to manage account-level resources, like organizations and teams, as well as manage and export data.If you're looking for information about the API surface for Sentry's SDKs, see the SDK Development docs.The current version of the Sentry's web API is considered v0. Our public endpoints are generally stable, but beta endpoints are subject to change.While many of Sentry's APIs use sentry.io as the host for API endpoints, if you want to indicate a specific data storage location, you can use your region-specific domain. Using your organization's region-specific domain will generally result in lower latency for most API calls. For example, if you are hosted in the US region, you would use us.sentry.io. You can check which region your organization is in by viewing your organization’s settings page.US region is hosted on us.sentry.ioDE region is hosted on de.sentry.io.To find out which API resources are available on region-based domains, see what types of data are stored where for more information.",
+  "method": "GET",
+  "http_status": 200
+}

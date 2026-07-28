@@ -1,0 +1,8 @@
+{
+  "url": "https://www.helpscout.com/pricing/",
+  "final_url": "https://www.helpscout.com/pricing/",
+  "fetched_at": "2026-07-28T03:32:51.590575+00:00",
+  "text": "A resolution is a single conversation that is resolved by AI Answers without human assistance. A resolution is counted only if the customer receives an AI response and doesn’t use escalation, search the knowledge base, ask more questions, or indicate that they need more help.If a customer requests more help with natural language or by selecting the “I still need help” button, the conversation won’t count as a resolution and you won’t be charged. You'll only be charged for one resolution per conversation, even if AI Answers responds to multiple questions.",
+  "method": "GET",
+  "http_status": 200
+}

@@ -1,0 +1,8 @@
+{
+  "url": "https://aws.amazon.com/quickstart/?solutions-all.sort-by=item.additionalFields.sortDate&solutions-all.sort-order=desc&awsf.filter-content-type=*all&awsf.filter-tech-category=*all&awsf.filter-industry=*all&solutions-all.q=mongodb&solutions-all.q_operator=AND",
+  "final_url": "https://aws.amazon.com/solutions/",
+  "fetched_at": "2026-07-28T04:06:33.600417+00:00",
+  "text": "Select your cookie preferencesWe use essential cookies and similar tools that are necessary to provide our site and services. We use performance cookies to collect anonymous statistics, so we can understand how customers use our site and make improvements. Essential cookies cannot be deactivated, but you can choose “Customize” or “Decline” to decline performance cookies.  If you agree, AWS and approved third parties will also use cookies to provide useful site features, remember your preferences, and display relevant content, including relevant advertising. To accept or decline all non-essential cookies, choose “Accept” or “Decline.” To make more detailed choices, choose “Customize.”",
+  "method": "browser",
+  "http_status": 200
+}

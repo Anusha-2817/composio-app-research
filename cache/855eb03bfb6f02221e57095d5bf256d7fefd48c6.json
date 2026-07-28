@@ -1,0 +1,8 @@
+{
+  "url": "https://developers.facebook.com/docs/threads",
+  "final_url": "https://developers.facebook.com/documentation/threads",
+  "fetched_at": "2026-07-28T03:54:53.566360+00:00",
+  "text": "Threads APIUpdated: Jul 2, 2026Use the Threads API to create and publish posts, retrieve media and profiles, moderate replies, and access insights. The sections below link to reference material and step-by-step guides.Brief overview of the Threads API limitations.Learn about the requirements for using the Threads API.How to create and customize a Meta app with the Threads API use case in the App Dashboard.The Threads API endpoints and their parameters.Learn how to make posts, retrieve media, and troubleshoot issues.",
+  "method": "browser",
+  "http_status": 200
+}

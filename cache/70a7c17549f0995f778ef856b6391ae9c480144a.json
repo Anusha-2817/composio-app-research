@@ -1,0 +1,8 @@
+{
+  "url": "https://developer-docs.amazon.com/sp-api",
+  "final_url": "https://developer-docs.amazon/sp-api",
+  "fetched_at": "2026-07-28T03:59:37.808889+00:00",
+  "text": "For AI agents: visit https://developer-docs.amazon/sp-api/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.Amazon Warehousing and Distribution APIApplication Management APIFulfillment By Amazon (FBA)Vendor Direct Fulfillment APIsVendor Direct Fulfillment Transaction Status APIVendor Direct Fulfillment Inventory APIVendor Direct Fulfillment Orders APIVendor Direct Fulfillment Shipping APIVendor Direct Fulfillment Payments APIVendor Retail Procurement Invoices APIVendor Retail Procurement Orders APIVendor Retail Procurement Shipments APIVendor Retail Procurement Transaction Status API",
+  "method": "GET",
+  "http_status": 200
+}

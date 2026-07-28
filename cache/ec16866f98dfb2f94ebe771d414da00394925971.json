@@ -1,0 +1,8 @@
+{
+  "url": "https://discord.com/developers/social-sdk",
+  "final_url": "https://discord.com/developers/social-sdk",
+  "fetched_at": "2026-07-28T03:36:55.343738+00:00",
+  "text": "Provisional accounts are accounts that can be used to access SDK features in a game, but they cannot be used to log into the Discord client. They allow a player to have access to in-game functionality powered by the SDK such as game invites, friends list, DMs, lobby chat, even if they don't have a Discord account or haven't linked their Discord account. However, because the player can't log into a provisional account using the Discord app, they cannot do the following:Receive DMs from players when they aren't playingRespond to messages when they aren't playingSee friends status when they aren't playingAccess a unified friends list between different games",
+  "method": "GET",
+  "http_status": 200
+}

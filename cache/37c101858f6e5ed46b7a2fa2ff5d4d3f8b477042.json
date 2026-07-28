@@ -1,0 +1,8 @@
+{
+  "url": "https://developer.gladly.com/",
+  "final_url": "https://developer.gladly.com/",
+  "fetched_at": "2026-07-28T03:34:12.161691+00:00",
+  "text": "Gladly Developer\nDeveloper\nGladly.com\nHome\n \nDeveloper API\n \nHelp and Support\nA platform with people at the heart of it\n\nLooking to extend Gladly, use Gladly’s REST APIs, receive notifications with webhooks, build an App Platform integration, or export data? You've come to the right place.\n\nApp Platform\n\nBuild integrations with external systems to take action and retrieve data.\n\nLearn more\nREST API\n\nIntegrate seamlessly with Gladly by enabling a connector, calling Gladly's REST APIs, or implementing the Lookup API to provide data from your own services.\n\nLearn more\nChat SDK\n\nEmbed Chat SDK in your website or app to let customers search for answers or contact your customer service team.\n\nWeb\niOS\nAndroid\nHelp Center\n\nHelp your customers help themselves. Use this reference to configure the answers your customers see on your Help Center, styled the way you want it.\n\nLearn more\nTutorials\n\nLearn how to use our APIs to automate popular workflows ranging from exporting conversation data out of Gladly to building integrations with 3rd party providers.\n\nLearn more\nCode Examples\n\nExplore sample code and reference implementations for Gladly's APIs, webhooks, and platform tools.\n\nApp Platform Tools\nApp Platform Examples\nREST API Examples\nWebhook Examples\nWeb Chat SDK Examples",
+  "method": "browser",
+  "http_status": 200
+}

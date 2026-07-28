@@ -1,0 +1,8 @@
+{
+  "url": "https://www.mongodb.com/pricing",
+  "final_url": "https://www.mongodb.com/pricing",
+  "fetched_at": "2026-07-28T04:06:04.759629+00:00",
+  "text": "StorageAtlas supports vertically and horizontally scaling storageFree512 MBLogical storageServerlessUp to 5 GBLogical storageDedicatedScale up to 4 TB per nodePhysical storage:\n           Vertical scaling: Up to 4 TB per node.\n           Horizontal scaling (sharding): Extend storage by adding shards.RAMAtlas supports vertically and horizontally scaling RAMFreeSharedServerlessSharedDedicatedScale up to 768 GB per nodevCPUAtlas supports vertically and horizontally scaling the number of coresFreeSharedServerlessSharedDedicatedScale up to 96 vCPUs per nodeCloud providersDeploy clusters across all major cloud providersFreeAWS, Google Cloud, AzureServerlessAWS, Google Cloud, AzureDedicatedAWS, Google Cloud, AzureUptime SLAGuaranteed uptime for mission-critical, production workloadsFreeServerlessDedicated99.995%",
+  "method": "browser",
+  "http_status": 200
+}

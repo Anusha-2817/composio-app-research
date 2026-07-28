@@ -1,0 +1,8 @@
+{
+  "url": "https://www.zoho.com/mcp/?src=allproducts",
+  "final_url": "https://www.zoho.com/mcp/?src=allproducts",
+  "fetched_at": "2026-07-28T03:35:36.005171+00:00",
+  "text": "For decades, business apps have made users click type toggle and chase That ends nowMeet Zoho MCP (Model Context Protocol), which enables developers to instantly transform business apps into intelligent, agent-ready systemsâsystems that think, act, and respond like a teammate, not just a tool.It connects LLMs like GPT or Claude to Zohoâs APIs, data models, and actions, so agents gain the context, access, and control they need to turn natural instructions into real actions across your business apps.",
+  "method": "GET",
+  "http_status": 200
+}

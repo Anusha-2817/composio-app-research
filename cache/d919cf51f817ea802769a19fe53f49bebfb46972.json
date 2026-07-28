@@ -1,0 +1,8 @@
+{
+  "url": "https://www.zendesk.com/in/developers/",
+  "final_url": "https://developer.zendesk.com/documentation/",
+  "fetched_at": "2026-07-28T03:29:34.098876+00:00",
+  "text": "Develop on the Zendesk Sunshine PlatformZendesk Sunshine is our open and flexible platform, built natively on AWS. You can create unique customer experiences using our APIs and SDKs, connect data sources across your technology stack, and build any app or automation you want, using the languages you love.",
+  "method": "GET",
+  "http_status": 200
+}

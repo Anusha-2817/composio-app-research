@@ -1,0 +1,8 @@
+{
+  "url": "https://www.smartsheet.com/platform/bridge",
+  "final_url": "https://www.smartsheet.com/platform/bridge",
+  "fetched_at": "2026-07-28T04:11:16.721417+00:00",
+  "text": "We were able to take our implementation team’s automated emails outside of Salesforce and move into Bridge through the use of an API with SendGrid. This has saved us time and allowed us to accelerate process improvements and process changes, by eliminating the need to go through our Salesforce Administrator and various approval stages. As a result, we can continue to scale and optimize our team’s workflow.",
+  "method": "GET",
+  "http_status": 200
+}

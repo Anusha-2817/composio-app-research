@@ -1,0 +1,8 @@
+{
+  "url": "https://www.usepylon.com/ai-agents/slack",
+  "final_url": "https://www.usepylon.com/ai-agents/slack",
+  "fetched_at": "2026-07-28T03:31:32.980801+00:00",
+  "text": "Slack Agent can answer questions about customers, accounts, support issues, product behavior, past conversations, usage, risks, and open work. It searches Pylon and connected systems, then returns the context and evidence behind its answer.",
+  "method": "GET",
+  "http_status": 200
+}

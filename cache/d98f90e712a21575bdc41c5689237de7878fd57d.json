@@ -1,0 +1,8 @@
+{
+  "url": "https://attio.com/mcp",
+  "final_url": "https://mcp.attio.com",
+  "fetched_at": "2026-07-28T10:15:22.072072+00:00",
+  "text": "*@@@@#=                                    ++:\n     #@@@@# :#                      :+#    =+@   @@+\n    #@@@@#   +             +++ :++ -*@@::::@@@:: --.    +++:\n   #@@@@+   ::          :%@@@@@@@@ @@@@@@@@@@@@@ @@+ :#@@@@@@=\n  #@@@@:   *:++++      :@@+   +@@@  +@@    @@@   @@+:@@#   +@@+\n #@@@@:   *:#@@# +     *@#     +@@  +@@    @@@   @@++@@     +@@\n@@@@@-   + #@@#   +    +@@:   :@@@  +@@    @@@   @@+=@@:    #@#\n:@@@@%: + #@@@@: ::     #@@@+@@@@@  :@@@@+ +@@@@ @@+ +@@@+#@@#\n :@@@@@+   #@@@@+:       :++++++++   :+++:  ++++ ++:   +++++:\n\nATTIO MCP SERVER\n\nConnect your AI tools to Attio via Model Context Protocol.\n\nSETUP\n-----\n\n**For Claude Desktop or Claude.ai:**\n\n1. Open Settings -> Connectors -> Browse connectors\n2. Search for Attio\n3. Install Attio\n\n**For ChatGPT:**\n\n1. Open Apps\n2. Search for Attio\n3. Connect Attio\n\n**For other MCP clients:**\n\nAdd `https://mcp.attio.com/mcp` as a remote MCP server and complete\nthe OAuth authentication when prompted.\n\nRESOURCES\n---------\nDocumentation    https://docs.attio.com/mcp/overview\nAPI Reference    https://developers.attio.com",
+  "method": "GET",
+  "http_status": 200
+}

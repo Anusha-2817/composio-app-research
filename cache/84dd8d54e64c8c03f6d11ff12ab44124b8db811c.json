@@ -1,0 +1,8 @@
+{
+  "url": "https://vercel.com/docs/rest-api#authentication",
+  "final_url": "https://vercel.com/docs/rest-api#authentication",
+  "fetched_at": "2026-07-28T04:03:20.737555+00:00",
+  "text": "Interact programmatically with your Vercel account using the SDK or direct HTTP requests. You can deploy new versions of web applications, manage custom domains, retrieve information about deployments, and manage secrets and environment variables for projects.The API supports any programming language or framework that can send HTTP requests.The API is exposed as an HTTP/1 and HTTP/2 service over SSL. All endpoints live under the URL https://api.vercel.com and follow the REST architecture.Vercel Access Tokens are required to authenticate and use the Vercel API. Include the token in the Authorization header:Authorization: Bearer <TOKEN>Create and manage Access Tokens in your account settings.By default, you can access resources in your personal account. To access resources owned by a team, append the Team ID as a query string:https://api.vercel.com/v6/deployments?teamId=[teamID]The API limits the number of calls you can make over a period of time. Rate limits are specified via response headers: X-RateLimit-Limit, X-RateLimit-Remaining, and X-RateLimit-Reset. See the limits documentation for details.Browse all available REST API endpoints grouped by category.",
+  "method": "GET",
+  "http_status": 200
+}

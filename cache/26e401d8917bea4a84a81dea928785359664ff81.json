@@ -1,0 +1,8 @@
+{
+  "url": "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/reference/im-v1",
+  "final_url": "https://open.larksuite.com/document/server-docs/im-v1/introduction",
+  "fetched_at": "2026-07-28T03:36:08.047834+00:00",
+  "text": "Send messagesPOST /open-apis/im/v1/messagesSends messages to a specific user or chat, with text, rich text, cards, group cards, name cards, images, videos, audios, files, and emojis supported.tenant_access_token✓✓Send messages in batchesPOST /open-apis/message/v4/batch_send/Sends messages to multiple users or departments.tenant_access_token✓✓Reply to messagesPOST /open-apis/im/v1/messages/:message_id/replyReplies to a specific message, with text, rich text, cards, group cards, name cards, images, videos, audios, files, and emojis supported.tenant_access_token✓✓Recall messagesDELETE /open-apis/im/v1/messages/:message_idThe bot recalls messages it sent or the group owner recalls messages within a group.tenant_access_tokenuser_access_token✓✓Query the read status of a messageGET /open-apis/im/v1/messages/:message_idQueries the read status of a message.tenant_access_token✓✓Read chat historyGET /open-apis/im/v1/messagesReads chat history for private and group chats.tenant_access_token✓✓Obtain resource files in messagesGET /open-apis/im/v1/messages/:message_id/resources/:file_keyObtain resource files in messages, including audios, videos, images, and files. Emoji resources cannot be downloaded, and the resource files for download cannot exceed 100 MB.tenant_access_token✓✓Obtain content of a specific messageGET /open-apis/im/v1/messages/:message_idQuery message content with message_id.tenant_access_token✓✓",
+  "method": "browser",
+  "http_status": 200
+}

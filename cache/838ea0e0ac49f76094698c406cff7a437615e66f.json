@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.snowflake.com",
+  "final_url": "https://docs.snowflake.com/en/",
+  "fetched_at": "2026-07-28T04:05:21.273742+00:00",
+  "text": "ReferenceReference for SQL data types, SQL commands, SQL functions, SQL classes, scripting, views, and other areas",
+  "method": "GET",
+  "http_status": 200
+}

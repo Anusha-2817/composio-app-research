@@ -81,6 +81,17 @@ python extract_pipeline.py --apps "DealCloud" --show "DealCloud"
 Fetches are cached to `cache/` keyed by URL hash, so re-runs are cheap and the
 same page is never fetched twice.
 
+**The cache is committed, so CHECK is reproducible without a network.**
+`cache/*.json` holds the extracted page text — the exact strings every
+`evidence_snippet` is matched against, and all `check_pipeline.py` reads. Clone
+the repo and re-run verification offline; every citation in the results can be
+confirmed or falsified against these files.
+
+The raw HTML alongside it (`cache/*_raw.html`, ~480 MB) is **not** committed. It
+is the input to text extraction, not to verification, so excluding it costs
+nothing for checking claims and keeps the repo to a few MB. Re-running
+`fetch_pipeline.py` regenerates it.
+
 ## Files
 
 | File | What's in it |
@@ -138,6 +149,11 @@ them.** Most of the error surface is fetcher reach, not model capability.
   discovery pulled `github.com/pricing` — real pages, genuine quotes, wrong
   entity. The citation checker cannot catch this, because the quote is real.
   A human reading the output caught it.
+- **Distrusting the summary, not just the data.** The MCP pass reported 70 apps
+  without a server. The real number was 58 — its list tracked apps this pass
+  couldn't help, which included 12 that already had a verified server. Diffing
+  the two files caught it before publication. The data was never wrong; the
+  summary printed on top of it was.
 
 ## Known limitations
 

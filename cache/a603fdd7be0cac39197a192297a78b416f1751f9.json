@@ -1,0 +1,8 @@
+{
+  "url": "https://www.hubspot.com/products/sales?hubs_content=www.hubspot.com/&hubs_content-cta=nav-software-sales",
+  "final_url": "https://www.hubspot.com/products/sales?hubs_content=www.hubspot.com/&hubs_content-cta=nav-software-sales",
+  "fetched_at": "2026-07-28T03:26:49.149787+00:00",
+  "text": "Yes — and it's one of the most powerful combinations in HubSpot. Sales Hub customers get access to HubSpot's Commerce Hub, which includes a fully integrated, AI-powered CPQ solution that lets sales teams quickly generate, customize, send, and track quotes. It pulls context from the deal record to update cover letters, business case summaries, and line items for faster, more accurate quoting.\nBecause both hubs are built into HubSpot's Smart CRM, the experience is fast, seamless, and easy to use. Reps can generate quotes with one click, apply branded templates, automate approvals, and see real-time buyer engagement — all without leaving their sales workflow. This means your team can move from prospecting to payment in one place, eliminating handoffs and reducing time to close. HubSpot customers can access Commerce Hub's CPQ capabilities by purchasing a Commerce Hub seat.",
+  "method": "GET",
+  "http_status": 200
+}

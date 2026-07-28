@@ -1,0 +1,8 @@
+{
+  "url": "https://developer.helpscout.com/",
+  "final_url": "https://developer.helpscout.com/",
+  "fetched_at": "2026-07-28T03:32:58.562262+00:00",
+  "text": "Getting Started\n\nHelp Scout provides several tools for developers to make magic happen:\n\n  Apps - display your own content as an internal sidebar application in the Inbox\n  Beacon - live chat, help docs, and a customer portal all in one\n  Inbox API - read and write data to Help Scout inboxes\n  Docs API - read and write data to your Docs sites\n  Webhooks - get notified about activity in Help Scout\n\nWe suggest spending time with Apps first, because it’s an easy way to create a lot of value for people on your team. You can be up and running in no time at all by following the Getting Started guide to display content in the Inbox sidebar quickly and securely.\n\nBuilding a Public Integration\n\nWill you be marketing your project to the public? Awesome! But before you launch anything, please read over our brand guidelines to make sure everything looks tip top. When it’s finished, be sure to let us know so we can tell everyone about it.",
+  "method": "GET",
+  "http_status": 200
+}

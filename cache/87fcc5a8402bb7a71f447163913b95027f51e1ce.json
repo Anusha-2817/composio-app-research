@@ -1,0 +1,8 @@
+{
+  "url": "https://developers.klaviyo.com/en/reference/get_profiles",
+  "final_url": "https://developers.klaviyo.com/en/reference/get_profiles",
+  "fetched_at": "2026-07-28T03:53:25.079895+00:00",
+  "text": "Default: 20. Min: 1. Max: 100.",
+  "method": "GET",
+  "http_status": 200
+}

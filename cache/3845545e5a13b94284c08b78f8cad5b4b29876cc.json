@@ -1,0 +1,8 @@
+{
+  "url": "https://neo4j.com/docs/mcp",
+  "final_url": "https://neo4j.com/docs/mcp/current/",
+  "fetched_at": "2026-07-28T10:37:06.963345+00:00",
+  "text": "Neo4j MCP implements the Model Context Protocol (MCP), an open standard that lets applications connect to external data sources and tools.\nIt bridges any MCP-compatible client and your Neo4j instance, giving that client direct, structured access to your graph database.\n\nAI assistants and agents are the most common MCP clients today, tools like Claude, Cursor, or VS Code with MCP support.\nBut MCP itself doesn’t require AI.\nAny application that implements the MCP client specification can connect to Neo4j through it, whether or not a model is involved.\n\nDevelopers who want to query Neo4j conversationally while prototyping.\n\nData scientists and analysts exploring graph data without deep Cypher® expertise.\n\nPlatform teams deploying shared tooling that needs structured, auditable access to Neo4j.\n\nApplication builders using Neo4j as a knowledge source or reasoning backend, including in multi-agent systems.\n\nExplore your graph schema - discover node labels, relationship types, and property keys, and reason about your data model without knowing it in advance.\n\nRun Cypher queries - execute reads and writes against your database from natural language prompts or programmatic calls.\n\nInspect and analyze data - retrieve nodes, relationships, and paths to answer questions, generate summaries, or feed other workflows.",
+  "method": "GET",
+  "http_status": 200
+}

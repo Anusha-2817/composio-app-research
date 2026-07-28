@@ -1,0 +1,8 @@
+{
+  "url": "https://developers.pinterest.com/usecase/content/",
+  "final_url": "https://developers.pinterest.com/usecase/content/",
+  "fetched_at": "2026-07-28T03:54:28.871677+00:00",
+  "text": "Create different types of Pins on PinterestThe best Pins are visually compelling, tell a good story and make people want to learn more. And with Pinterest API, you can create, edit, and manage your Pins and Boards at scale — saving you time and enhancing your impact. Whether you want to run ads or not, you can upload images, videos, your product catalog, and more to create:Standard PinsVideo PinsProduct PinsCollectionsIdea Pins",
+  "method": "GET",
+  "http_status": 200
+}

@@ -1,0 +1,8 @@
+{
+  "url": "https://www.pipedrive.com/en/tools/sales-calculator",
+  "final_url": "https://www.pipedrive.com/en/tools/sales-calculator",
+  "fetched_at": "2026-07-28T03:27:26.504205+00:00",
+  "text": "Your total revenue is the total income of all your activities across all channels. This metric is key to understanding how to price your goods and services.\nDon’t worry, though. You don’t need a total revenue calculator to crunch those numbers. Instead, use the following formula:\n| Price x sold units or service = your total revenue\nPipedrive’s sales calculator and sales tax percentage calculator give you an insight into how many prospects you need to contact and how much you need to earn to hit your mark.\nThe sales calculator even breaks down the results into required activities: phone calls, proposals and meetings.",
+  "method": "GET",
+  "http_status": 200
+}

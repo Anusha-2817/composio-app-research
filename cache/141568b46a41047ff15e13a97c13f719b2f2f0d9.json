@@ -1,0 +1,8 @@
+{
+  "url": "https://seranking.com/api-pricing.html",
+  "final_url": "https://seranking.com/api-pricing.html",
+  "fetched_at": "2026-07-28T04:00:13.644943+00:00",
+  "text": "Technical SEO audit Runs a one-shot audit across crawlability, indexability, mobile, security, structured data, and JS rendering, then returns a top-10 fix list ranked by impact and effort.",
+  "method": "GET",
+  "http_status": 200
+}

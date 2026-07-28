@@ -1,0 +1,8 @@
+{
+  "url": "https://www.mongodb.com/products/tools/compass",
+  "final_url": "https://www.mongodb.com/products/tools/compass",
+  "fetched_at": "2026-07-28T04:06:06.319166+00:00",
+  "text": "You can use MongoDB Compass in every stage of the software development lifecycle (SDLC).During development, Compass simplifies schema design, query building, and aggregation creation through its intuitive visual interface and AI-powered natural language features.In the testing phase, Compass allows importing and exporting data for testing locally and refining your data model to optimize performance, such as by adding efficient indexes.During deployment, Compass helps you analyze real-time database metrics to monitor end-user interactions and make adjustments to improve the experience.In the maintenance phase, Compass allows you to visualize and explore patterns in your application data, debug issues with query performance using the visual Explain Plan, and iteratively optimize your workflows.",
+  "method": "GET",
+  "http_status": 200
+}

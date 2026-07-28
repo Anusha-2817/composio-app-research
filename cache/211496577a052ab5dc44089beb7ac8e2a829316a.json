@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.stripe.com/api/v2/core/person-tokens",
+  "final_url": "https://docs.stripe.com/api/v2/core/person-tokens",
+  "fetched_at": "2026-07-28T04:12:17.061301+00:00",
+  "text": "{  \"id\": \"perstok_61RS0CgWt1xBt8M1Q16RS0Cg0WSQO5ZXUVpZxZ9tAIbY\",  \"object\": \"v2.core.account_person_token\",  \"created\": \"2025-11-17T14:00:00.000Z\",  \"expires_at\": \"2025-11-17T14:10:00.000Z\",  \"livemode\": true,  \"used\": false}",
+  "method": "GET",
+  "http_status": 200
+}

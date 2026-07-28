@@ -1,0 +1,8 @@
+{
+  "url": "https://docs.github.com/en/rest/authentication/endpoints-available-for-github-app-user-access-tokens",
+  "final_url": "https://docs.github.com/en/rest/authentication/endpoints-available-for-github-app-user-access-tokens",
+  "fetched_at": "2026-07-28T02:13:45.632849+00:00",
+  "text": "Your GitHub App can make requests to the following REST endpoints with a user access token.Who can use this feature?",
+  "method": "GET",
+  "http_status": 200
+}

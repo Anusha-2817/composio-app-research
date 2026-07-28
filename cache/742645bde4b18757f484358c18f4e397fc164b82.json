@@ -1,0 +1,8 @@
+{
+  "url": "https://www.twilio.com/en-us/user-authentication-identity/pricing/lookup",
+  "final_url": "https://www.twilio.com/en-us/user-authentication-identity/pricing/lookup",
+  "fetched_at": "2026-07-28T03:35:02.549325+00:00",
+  "text": "Line type intelligence\r\nIdentify the carrier and phone line type from mobile, landline, fixed VoIP, non-fixed VoIP, toll free, and more to mitigate fake accounts, scrub contact lists, and improve deliverability.",
+  "method": "GET",
+  "http_status": 200
+}

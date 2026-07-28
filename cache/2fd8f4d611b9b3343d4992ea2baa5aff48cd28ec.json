@@ -1,0 +1,8 @@
+{
+  "url": "https://vercel.com/docs/rest-api/authentication/sso-token-exchange",
+  "final_url": "https://vercel.com/docs/rest-api/authentication/sso-token-exchange",
+  "fetched_at": "2026-07-28T04:03:22.557869+00:00",
+  "text": "1const response = await fetch('https://api.vercel.com/v1/integrations/sso/token', {4    'Authorization': 'Bearer YOUR_ACCESS_TOKEN',5    'Content-Type': 'application/json',10    \"client_id\": \"example_id\",11    \"client_secret\": \"string\",12    \"redirect_uri\": \"https://example.com\",13    \"grant_type\": \"authorization_code\"17const data = await response.json();",
+  "method": "GET",
+  "http_status": 200
+}

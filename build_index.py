@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 
-with open("results_v2.json", encoding="utf-8") as f:
+with open("results_v5.json", encoding="utf-8") as f:
     data = json.load(f)
 
 def get_val(field):
@@ -17,7 +17,8 @@ def get_val(field):
     return ""
 
 def first_evidence_url(r):
-    for f in ("one_liner", "auth_methods", "access_tier", "api_surface", "mcp"):
+    for f in ("one_liner", "auth_methods", "access_tier", "api_surface",
+              "mcp_product", "mcp_docs", "mcp"):
         obj = r.get(f)
         if isinstance(obj, dict) and obj.get("evidence_url"):
             return obj["evidence_url"]
@@ -33,7 +34,13 @@ for r in data:
         "status": r.get("status", "ok"),
         "auth": get_val(r.get("auth_methods")),
         "tier": get_val(r.get("access_tier")),
-        "mcp": get_val(r.get("mcp")),
+        # MCP is emitted as three keys, not one. The docs-server vs
+        # product-server distinction is the main finding of this pass, so
+        # it has to survive into the machine-readable payload — an agent
+        # reading this JSON must not have to infer it from the display.
+        "mcp_product": get_val(r.get("mcp_product")) or get_val(r.get("mcp")),
+        "mcp_scope": (r.get("mcp_product") or {}).get("scope", ""),
+        "mcp_docs": get_val(r.get("mcp_docs")) is True,
         "buildability": r.get("buildability", ""),
         "blocker": r.get("primary_blocker", ""),
         "evidence_url": first_evidence_url(r),
@@ -156,12 +163,20 @@ footer{padding:20px 0;text-align:center;color:var(--fg3);font-size:12px;border-t
 <div class="wrap">
 <header>
   <h1>100-app research agent</h1>
-  <p>Automated API capability extraction &mdash; Composio take-home &mdash; results v2</p>
+  <p>Automated API capability extraction &mdash; Composio take-home &mdash; results v5</p>
   <p style="margin-top:8px;font-size:13px">
-    Raw data: <a href="results_v2.json">results_v2.json</a> &middot;
-    <a href="results_v1.json">results_v1.json</a> &middot;
-    <a href="verification_report_v2.json">verification_report_v2.json</a> &middot;
+    Raw data: <a href="results_v5.json">results_v5.json</a> &middot;
+    <a href="results.csv">results.csv</a> &middot;
+    <a href="results.md">results.md</a> &middot;
     <a href="gold_set.json">gold_set.json</a>
+  </p>
+  <p style="margin-top:6px;font-size:12px;color:var(--fg3)">
+    Earlier passes, kept for diffing:
+    <a href="results_v1.json">v1</a> &middot;
+    <a href="results_v2.json">v2</a> &middot;
+    <a href="results_v3.json">v3</a> &middot;
+    <a href="results_v4.json">v4</a> &middot;
+    <a href="verification_report_v2.json">verification_report_v2.json</a>
   </p>
 </header>
 
@@ -172,14 +187,17 @@ footer{padding:20px 0;text-align:center;color:var(--fg3);font-size:12px;border-t
   <div class="card">
     <div class="num">35%</div>
     <div class="label">of apps are per-tenant &mdash; no single API base URL. Each customer gets their own instance, so a generic integration must discover the base URL at runtime. This is the largest structural blocker.</div>
+    <div style="font-size:13px;color:var(--fg3);margin-top:10px;font-style:italic">Implication: these can&rsquo;t ship a fixed endpoint. Connection needs per-customer configuration &mdash; an onboarding architecture decision, not a per-app one.</div>
   </div>
   <div class="card">
     <div class="num">6 of 100</div>
     <div class="label">are truly sales-gated (contact_sales or partner_gated). 16 are customer-admin-gated, which looks like a wall but is a different problem: the API exists and is documented, but someone inside the customer org has to flip a switch.</div>
+    <div style="font-size:13px;color:var(--fg3);margin-top:10px;font-style:italic">Implication: the friction is end-customer enablement, not partnership. That&rsquo;s a docs and support problem, not a BD one.</div>
   </div>
   <div class="card">
     <div class="num">27 of 100</div>
-    <div class="label">already ship an MCP server (22 full read-write, 5 read-only). These apps have opted in to the agent ecosystem &mdash; integration work is minimal.</div>
+    <div class="label">have a product MCP server with evidence. This is a floor &mdash; detection is URL-pattern based and misses vendors hosting at separate hostnames. Scope could only be verified for 11 of the 27.</div>
+    <div style="font-size:13px;color:var(--fg3);margin-top:10px;font-style:italic">Implication: a quarter of the set has already opted into the agent ecosystem &mdash; integration cost is near zero where it exists.</div>
   </div>
 </div>
 </section>
@@ -191,8 +209,9 @@ footer{padding:20px 0;text-align:center;color:var(--fg3);font-size:12px;border-t
 <h3>Evidence verification (string matching, zero LLM calls)</h3>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:16px">
   <div class="card" style="padding:14px">
-    <div style="font-size:13px;color:var(--fg2)">Verified rate</div>
+    <div style="font-size:13px;color:var(--fg2)">Citation-exists rate</div>
     <div style="font-size:20px;font-weight:700">v1 70.4% <span class="delta">&rarr; v2 74.6%</span></div>
+    <div style="font-size:12px;color:var(--fg3);margin-top:6px">String matching proves a quote is real, not that it supports the claim. See <a href="#limitations" style="color:var(--accent)">limitations</a>.</div>
   </div>
   <div class="card" style="padding:14px">
     <div style="font-size:13px;color:var(--fg2)">Fabricated citations caught</div>
@@ -209,7 +228,9 @@ footer{padding:20px 0;text-align:center;color:var(--fg3);font-size:12px;border-t
   </div>
 </div>
 
-<p style="font-size:13px;color:var(--fg2);margin-bottom:16px">CHECK normalizes both the evidence_snippet and the cached page text (lowercase, strip punctuation, collapse whitespace), then checks whether the snippet appears as a substring. If it doesn't, the field is flagged. The v2 repair loop re-extracts flagged fields with an exact-substring instruction, then re-CHECKs. Fields that fail twice are downgraded to not_found.</p>
+<p style="font-size:13px;color:var(--fg2);margin-bottom:12px">CHECK normalizes both the evidence_snippet and the cached page text (lowercase, strip punctuation, collapse whitespace), then checks whether the snippet appears as a substring. If it doesn't, the field is flagged. The v2 repair loop re-extracts flagged fields with an exact-substring instruction, then re-CHECKs. Fields that fail twice are downgraded to not_found.</p>
+
+<p style="font-size:13px;color:var(--fg2);margin-bottom:16px;border-left:3px solid var(--warn);padding-left:12px">String matching proves the quote is real and appears in the source page. It does not prove the quote supports the claim. Example: Salesforce&rsquo;s <code style="font-family:var(--mono);font-size:12px;background:var(--bg3);padding:1px 5px;border-radius:3px">instance_model: per_tenant</code> cites a Trailhead event blurb &mdash; a genuine string on a genuine page that supports nothing. For what accuracy actually looks like, see the gold comparison below, where <code style="font-family:var(--mono);font-size:12px;background:var(--bg3);padding:1px 5px;border-radius:3px">auth_methods</code> exact precision is 0/6. Citation-exists is a floor, not an accuracy measure.</p>
 
 <h3>Buildability correction (deterministic, independent of citation repair)</h3>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:16px">
@@ -238,7 +259,8 @@ footer{padding:20px 0;text-align:center;color:var(--fg3);font-size:12px;border-t
 <tr><td>api_surface.surface_types</td><td>86%</td><td>33%</td><td>2/6 &mdash; agent misses secondary types (GraphQL, webhook, library)</td></tr>
 <tr><td>api_surface.breadth</td><td>83%</td><td>60%</td><td>3/5 correct</td></tr>
 <tr><td>api_surface.write_access</td><td>83%</td><td>100%</td><td>5/5 correct</td></tr>
-<tr><td>mcp</td><td>100%</td><td>75%</td><td>3/4 &mdash; missed Stripe's MCP server</td></tr>
+<tr><td>mcp_existence</td><td>75%</td><td>100%</td><td>3/3 answered of 4 gold</td></tr>
+<tr><td>mcp_scope</td><td>33%</td><td>100%</td><td>1/1 answered of 3 gold</td></tr>
 <tr><td>buildability</td><td>100%</td><td>57%</td><td>4/7 correct</td></tr>
 <tr><td>primary_blocker</td><td>100%</td><td>43%</td><td>3/7 correct</td></tr>
 </tbody>
@@ -261,7 +283,6 @@ footer{padding:20px 0;text-align:center;color:var(--fg3);font-size:12px;border-t
 <tr><td>GitHub</td><td>auth_methods</td><td class="mm-gold mono">api_key, basic, oauth2_authcode, token</td><td class="mm-agent mono">basic, token</td></tr>
 <tr><td>GitHub</td><td>surface_types</td><td class="mm-gold mono">graphql, rest, webhook</td><td class="mm-agent mono">rest</td></tr>
 <tr><td>Stripe</td><td>auth_methods</td><td class="mm-gold mono">api_key, oauth2_authcode</td><td class="mm-agent mono">api_key</td></tr>
-<tr><td>Stripe</td><td>mcp</td><td class="mm-gold mono">full</td><td class="mm-agent mono">none</td></tr>
 <tr><td>Twenty</td><td>instance_model</td><td class="mm-gold mono">self_hosted</td><td class="mm-agent mono">per_tenant</td></tr>
 <tr><td>Twenty</td><td>auth_methods</td><td class="mm-gold mono">api_key, oauth2_authcode</td><td class="mm-agent mono">oauth2_authcode</td></tr>
 <tr><td>Twenty</td><td>access_tier</td><td class="mm-gold mono">self_serve_free</td><td class="mm-agent mono">self_serve_paid</td></tr>
@@ -277,6 +298,10 @@ footer{padding:20px 0;text-align:center;color:var(--fg3);font-size:12px;border-t
 </tbody>
 </table>
 </div>
+
+<h3 style="margin-top:28px">MCP: three loops</h3>
+<p>A pattern probe found 41 apps appearing to ship an MCP server. Four cited pages that never mention MCP &mdash; two were inherited values pointing at a changelog and a docs root, and were never evidence. Ten more cited a Mintlify documentation-search server rather than a product API server: a real quote, from a real page, about the wrong subject. String matching cannot catch that class of error, because the citation is genuine. 27 survive with product-level evidence, and scope is verified for 11.</p>
+<p style="margin-top:12px"><strong>Detecting an MCP endpoint is easy. Verifying what it can do is not.</strong></p>
 </section>
 
 <!-- Section 3: The 100 -->
@@ -358,16 +383,18 @@ python score.py</code></pre>
 </section>
 
 <!-- Section 6: Limitations -->
-<section>
+<section id="limitations">
 <h2>Limitations, named</h2>
 <div style="font-size:14px;line-height:1.7">
-<p><strong>Fetcher blind spots.</strong> The link-discovery stage reaches API reference docs reliably but misses pricing pages, MCP documentation, and partner/integration pages. The agent fetched only 4 of 15 pages a human visited for the same 7 apps. Stripe's MCP server page was never fetched, producing a false negative on a flagship feature.</p>
+<p><strong>Known false negatives.</strong> The MCP count is understated. The pipeline found 27 of 100. Spot-checking apps with publicly documented MCP servers &mdash; GitHub, Notion, Linear, Atlassian, Sentry, Vercel, Snowflake, Stripe &mdash; suggests the true figure is closer to 45&ndash;55. Every miss traces to one cause: MCP documentation sits outside API reference sections, and link discovery is anchored on reference docs. Same root cause as the Stripe and Twenty misses in the gold comparison. The headline stat is labelled accordingly.</p>
+
+<p style="margin-top:12px"><strong>Fetcher blind spots.</strong> The link-discovery stage reaches API reference docs reliably but misses pricing pages, MCP documentation, and partner/integration pages. The agent fetched only 4 of 15 pages a human visited for the same 7 apps. Stripe's MCP server page was never fetched, producing a false negative on a flagship feature.</p>
 
 <p style="margin-top:12px"><strong>Support/Helpdesk: systematic failure.</strong> 8 of 10 apps in this category returned insufficient_evidence. Zendesk, Intercom, Freshdesk, Front, LiveAgent, Help Scout, Gorgias, and Gladly all have well-documented APIs, but the fetcher landed on marketing pages and support portals instead of developer docs. This is a category-level blind spot, not an app-level one.</p>
 
 <p style="margin-top:12px"><strong>Name collision.</strong> Otter.ai (meeting transcription) vs tryotter.com (restaurant delivery) &mdash; the agent fetched the wrong domain. This fooled both the agent and the human reviewer during early iterations. Ambiguous app names with no hint URL are a structural weakness of keyword-based resolution.</p>
 
-<p style="margin-top:12px"><strong>Negative findings are unverifiable.</strong> When the agent says "no MCP server," there is no page text to quote. 44 of 99 ok apps have mcp=none with no evidence snippet. These were reclassified as unverifiable_negative rather than flagged, but they remain structurally untestable. The agent cannot prove absence.</p>
+<p style="margin-top:12px"><strong>Negative findings are unverifiable.</strong> When the agent says "no MCP server," there is no page text to quote. 46 of 99 ok apps have mcp_product=none with no evidence snippet. These were reclassified as unverifiable_negative rather than flagged, but they remain structurally untestable. The agent cannot prove absence.</p>
 
 <p style="margin-top:12px"><strong>Thin gold set.</strong> 7 of 100 apps were hand-researched. This sample is too small for statistical confidence in per-field precision numbers. The gold set over-represents apps with good documentation (Stripe, GitHub) and under-represents the long tail of poorly-documented tools.</p>
 </div>
@@ -433,11 +460,16 @@ python score.py</code></pre>
       count++;
       const isInsuff = r.buildability === 'insufficient_evidence';
       const evUrl = getEvidenceUrl(r);
-      const mcp = val(r.mcp);
-      const mpcDisplay = mcp === 'none' ? '<span style="color:var(--fg3)">none</span>'
+      const mcp = val(r.mcp_product);
+      const docsTag = r.mcp_docs ? ' <span title="documentation-search MCP server only" style="color:var(--fg3);font-size:.85em">+docs</span>' : '';
+      const scopeTag = r.mcp_scope === 'unverified'
+        ? ' <span title="server exists; scope not established by the evidence" style="color:var(--fg3);font-size:.85em">scope?</span>' : '';
+      const mpcDisplay = (mcp === 'none' ? '<span style="color:var(--fg3)">none</span>'
         : mcp === 'full' ? '<span style="color:var(--ok);font-weight:600">full</span>'
         : mcp === 'read_only' ? '<span style="color:var(--accent)">read_only</span>'
-        : mcp;
+        : mcp === 'present' ? '<span style="color:var(--accent)">present</span>'
+        : mcp === 'unverified' ? '<span style="color:var(--fg3)" title="only a documentation MCP server was found; a product API MCP server is neither confirmed nor ruled out">unverified</span>'
+        : mcp) + scopeTag + docsTag;
       html += '<tr'+(isInsuff?' class="insuff"':'')+'>'
         +'<td>'+r.id+'</td>'
         +'<td><strong>'+r.app+'</strong></td>'

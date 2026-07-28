@@ -1,0 +1,8 @@
+{
+  "url": "https://airtable.com/developers/agents/mcp/tools",
+  "final_url": "https://airtable.com/developers/agents/mcp/tools",
+  "fetched_at": "2026-07-28T04:07:57.209457+00:00",
+  "text": "Tools exposed by Airtable's remote MCP server at https://mcp.airtable.com/mcp.AutomationsBasesFieldsFormsInterfacesRecordsTablesWorkspaces",
+  "method": "GET",
+  "http_status": 200
+}

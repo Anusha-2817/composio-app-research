@@ -1,0 +1,8 @@
+{
+  "url": "https://shopify.dev/docs/api/shopify-cli/theme",
+  "final_url": "https://shopify.dev/docs/api/shopify-cli/theme",
+  "fetched_at": "2026-07-28T03:56:26.301729+00:00",
+  "text": "theme devUploads the current theme as the specified theme, or a development theme, to a store so you can preview it.",
+  "method": "GET",
+  "http_status": 200
+}

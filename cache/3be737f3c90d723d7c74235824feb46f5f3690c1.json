@@ -1,0 +1,8 @@
+{
+  "url": "https://higgsfield.ai/pricing",
+  "final_url": "https://higgsfield.ai/pricing",
+  "fetched_at": "2026-07-28T04:17:22.066884+00:00",
+  "text": "Unlimited lets you generate content without spending credits on supported models, resolutions, or quality tiers included in your plan. To ensure a smooth experience for everyone, we manage system resources dynamically:Dynamic Speed Adjustment: Generation speed and concurrency may temporarily vary during periods of exceptionally high system load or peak traffic hours.System Stability: Processing limits and concurrency may adjust dynamically during high load to maintain reliable platform performance for all users on unlimited plans.Credit Mode: You can turn off Unlimited at any time to generate faster using credits. Simply switch to Credit Mode to bypass the standard queue and return to maximum speed instantly.Fair Use: This feature is designed for personal, human use only - automation tools, credential sharing, or reselling access are strictly prohibited.Account Review: If unusual activity is detected, Unlimited access may be temporarily paused for manual review by our Support Team and restored once normal usage is confirmed.",
+  "method": "browser",
+  "http_status": 200
+}

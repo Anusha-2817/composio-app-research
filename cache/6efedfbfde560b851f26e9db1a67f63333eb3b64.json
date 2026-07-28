@@ -1,0 +1,8 @@
+{
+  "url": "https://app.pipedrive.com/auth/login",
+  "final_url": "https://app.pipedrive.com/auth/login",
+  "fetched_at": "2026-07-28T03:27:28.122104+00:00",
+  "text": "Please log in to continue",
+  "method": "GET",
+  "http_status": 200
+}
