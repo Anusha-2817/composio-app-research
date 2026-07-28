@@ -31,6 +31,30 @@ This caught **34 fabricated citations** across 594 fields on the first pass.
 Full design notes and the schema live in [`SPEC.md`](SPEC.md), including a
 "design decisions" section recording which observed failure drove each change.
 
+## Architecture
+
+```mermaid
+flowchart TD
+    A[apps.json<br/>100 apps + hint URLs] --> B[RESOLVE<br/>pick seed URL]
+    B --> C[FETCH tier 1<br/>plain HTTP]
+    C --> D{thin page?<br/>under 500 chars}
+    D -->|yes| E[FETCH tier 2<br/>headless browser]
+    D -->|no| F[link discovery<br/>auth, token, pricing, mcp]
+    E --> F
+    F --> G[(cache/<br/>never fetch twice)]
+    G --> H[EXTRACT<br/>LLM sees fetched text only<br/>verbatim quote required]
+    H --> I[CHECK<br/>string match, no LLM]
+    I --> J{quote in<br/>source page?}
+    J -->|yes| K[verified]
+    J -->|no| L[flagged]
+    L --> M[REPAIR v2<br/>re-extract, exact substring]
+    M --> N{verified now?}
+    N -->|yes| K
+    N -->|no| O[downgrade to not_found]
+    K --> P[results_v2.json]
+    O --> P
+```
+
 ## Running it
 
 ```bash
