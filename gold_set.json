@@ -162,12 +162,12 @@
     "mcp": {
       "value": "full",
       "evidence_url": "https://docs.stripe.com/mcp",
-      "evidence_snippet": "Connect using the server URL https://mcp.stripe.com with OAuth authentication",
+      "evidence_snippet": "The Stripe Model Context Protocol (MCP) server provides a set of tools that AI agents can use to interact with the Stripe API and search our knowledge base",
       "confidence": "high"
     },
     "buildability": "easy_win",
     "primary_blocker": "none",
-    "notes": "Control app for the gold set: if the agent gets Stripe wrong, something is structurally broken. Restricted API keys are a scoped variant of api_key, not a separate auth method. Test keys work immediately with no card and no approval."
+    "notes": "Control app for the gold set: if the agent gets Stripe wrong, something is structurally broken. Restricted API keys are a scoped variant of api_key, not a separate auth method. Test keys work immediately with no card and no approval. MCP is marked 'Public preview' on the docs page — the schema captures capability (full) but not stability, which is a real enum limitation. Stripe's docs also ship 'Copy for LLM' and 'View as Markdown' affordances, i.e. some vendors are already publishing agent-readable documentation. The agent missed this MCP entirely because /mcp is a separate docs section not linked from the API reference — same root cause as Twenty, where MCP lived on a marketing page."
   },
   {
     "app": "Twenty",
