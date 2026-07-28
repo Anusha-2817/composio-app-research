@@ -211,6 +211,19 @@ footer{padding:20px 0;text-align:center;color:var(--fg3);font-size:12px;border-t
 
 <p style="font-size:13px;color:var(--fg2);margin-bottom:16px">CHECK normalizes both the evidence_snippet and the cached page text (lowercase, strip punctuation, collapse whitespace), then checks whether the snippet appears as a substring. If it doesn't, the field is flagged. The v2 repair loop re-extracts flagged fields with an exact-substring instruction, then re-CHECKs. Fields that fail twice are downgraded to not_found.</p>
 
+<h3>Buildability correction (deterministic, independent of citation repair)</h3>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:16px">
+  <div class="card" style="padding:14px">
+    <div style="font-size:13px;color:var(--fg2)">v1 easy_win</div>
+    <div style="font-size:20px;font-weight:700">63 <span class="delta-neg">&rarr; 53</span></div>
+  </div>
+  <div class="card" style="padding:14px">
+    <div style="font-size:13px;color:var(--fg2)">Moved to insufficient_evidence</div>
+    <div style="font-size:20px;font-weight:700">36</div>
+  </div>
+</div>
+<p style="font-size:13px;color:var(--fg2);margin-bottom:16px">A deterministic post-processing rule: if <code style="font-family:var(--mono);font-size:12px;background:var(--bg3);padding:1px 5px;border-radius:3px">auth_methods</code> or <code style="font-family:var(--mono);font-size:12px;background:var(--bg3);padding:1px 5px;border-radius:3px">access_tier</code> is not_found, buildability cannot be asserted. This moved 36 apps from easy_win to insufficient_evidence. This is independent of the citation repair loop &mdash; one fixed fabricated evidence, this one fixed unsupported inference. The LLM was asserting easy_win for apps where it had no evidence for the fields that determine buildability.</p>
+
 <h3>Gold comparison (7 hand-researched apps)</h3>
 <p style="font-size:13px;color:var(--fg2);margin-bottom:12px">The agent reached only <strong>4 of 15</strong> pages a human visited. Most gold evidence URLs were never fetched, limiting what the agent could find.</p>
 
@@ -313,7 +326,38 @@ footer{padding:20px 0;text-align:center;color:var(--fg3);font-size:12px;border-t
 <p style="font-size:13px;color:var(--fg2);margin-top:12px"><strong>Where humans were needed:</strong> choosing the 100-app list, writing the schema and enum values, debugging the fetcher (readability regressions, entity scoping), fixing rate-limit errors, pinning the Gemini model after 404s and JSON failures, and writing the 7-app gold set.</p>
 </section>
 
-<!-- Section 5: Limitations -->
+<!-- Section 5: Proof -->
+<section>
+<h2>Proof</h2>
+<p style="font-size:14px;margin-bottom:16px">Every result is reproducible from the public repo. A reviewer can re-run the full pipeline or spot-check a single app.</p>
+
+<h3>Repository</h3>
+<p style="font-size:14px;margin-bottom:16px"><a href="https://github.com/Anusha-2817/composio-app-research.git">github.com/Anusha-2817/composio-app-research</a></p>
+
+<h3>Setup</h3>
+<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:14px;margin-bottom:16px">
+<pre style="font-family:var(--mono);font-size:13px;line-height:1.6;white-space:pre-wrap;color:var(--fg)"><code>pip install -r requirements.txt
+playwright install chromium
+# add GEMINI_API_KEY to .env</code></pre>
+</div>
+
+<h3>Full run</h3>
+<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:14px;margin-bottom:16px">
+<pre style="font-family:var(--mono);font-size:13px;line-height:1.6;white-space:pre-wrap;color:var(--fg)"><code>python fetch_pipeline.py
+python extract_pipeline.py
+python check_pipeline.py
+python repair_v2.py
+python score.py</code></pre>
+</div>
+
+<h3>Single-app spot check</h3>
+<p style="font-size:13px;color:var(--fg2);margin-bottom:8px">A reviewer can verify one app in seconds without re-running the full pipeline:</p>
+<div style="background:var(--bg2);border:1px solid var(--border);border-radius:var(--radius);padding:14px">
+<pre style="font-family:var(--mono);font-size:13px;line-height:1.6;white-space:pre-wrap;color:var(--fg)"><code>python extract_pipeline.py --apps "DealCloud" --show "DealCloud"</code></pre>
+</div>
+</section>
+
+<!-- Section 6: Limitations -->
 <section>
 <h2>Limitations, named</h2>
 <div style="font-size:14px;line-height:1.7">
